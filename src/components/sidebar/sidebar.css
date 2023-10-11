@@ -15,6 +15,9 @@ body {
     padding-top: 60px;
     white-space: nowrap;
   }
+  .sidebar:hover{
+    width: 245px;
+  }
   
   .sidebar a {
     padding: 8px 8px 8px 32px;
@@ -46,7 +49,9 @@ body {
     margin-right: 30px;
   }
   
-  
+  .mini-sidebar {
+    width: 85px; /* Width of the expanded sidebar */
+  }
   @media screen and (max-height: 450px) {
     .sidebar {
       padding-top: 15px;

@@ -1,20 +1,9 @@
 import { useState } from "react";
 import "./sidebar.css"
+import { NotificationsNone } from "@mui/icons-material";
 
 const Sidebar = () => {
     
-    const [mini, setMini] = useState(true);
-
-    const toggleSidebar = () => {
-      if (mini) {
-        document.getElementById("mySidebar").style.width = "250px";
-        setMini(false);
-      } else {
-        document.getElementById("mySidebar").style.width = "85px";
-        setMini(true);
-      }
-    };
-  
     return (
       <div>
         <link
@@ -24,10 +13,8 @@ const Sidebar = () => {
   
         <div
           id="mySidebar"
-          className={`sidebar ${mini ? "mini-sidebar" : ""}`}
-          onMouseOver={toggleSidebar}
-          onMouseOut={toggleSidebar}
-        >
+          className={`sidebar`}
+                 >
           <a href="#">
             <span>
               <i className="material-icons">info</i>
@@ -49,6 +36,7 @@ const Sidebar = () => {
             <i className="material-icons">email</i>
             <span className="icon-text">contact</span>
           </a>
+        
         </div>
   
     
