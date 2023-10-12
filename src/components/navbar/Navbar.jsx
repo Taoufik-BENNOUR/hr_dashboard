@@ -51,7 +51,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={useColorModeValue('lightblue')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -62,7 +62,7 @@ export default function Navbar() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>Logo</Box>
-            <HStack  className="navLink" as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
+            <HStack  className="navLink" as={'nav'} spacing={0} display={{ base: 'none', md: 'flex' }}>
               {Links.map((link) => (
                 <NavLink href={link.href} key={link.text}>{link.text}</NavLink>
               ))}

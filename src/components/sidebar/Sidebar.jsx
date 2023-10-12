@@ -1,46 +1,30 @@
 import { useState } from "react";
 import "./sidebar.css"
-import { NotificationsNone } from "@mui/icons-material";
+import { Info, NotificationsNone, Search, Spa } from "@mui/icons-material";
+import sidebarData from "../../data/sidebarData";
 
 const Sidebar = () => {
     
     return (
-      <div>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        />
-  
-        <div
-          id="mySidebar"
-          className={`sidebar`}
-                 >
-          <a href="#">
-            <span>
-              <i className="material-icons">info</i>
-              <span className="icon-text">about</span>
-            </span>
-          </a>
-          <br />
-          <a href="#">
-            <i className="material-icons">spa</i>
-            <span className="icon-text">services</span>
-          </a>
-          <br />
-          <a href="#">
-            <i className="material-icons">monetization_on</i>
-            <span className="icon-text">clients</span>
-          </a>
-          <br />
-          <a href="#">
-            <i className="material-icons">email</i>
-            <span className="icon-text">contact</span>
-          </a>
-        
-        </div>
-  
-    
+      <div className='sidebar'>
+      <div className="sidebarWrapper">
+          {sidebarData?.map((menu,i)=>(
+          <div key={i} className="sidebarMenu">
+          <h3 className="sidebarTitle" >{menu.menuTitle}</h3>
+          {menu?.menuItems.map((item,i)=>
+              <ul key={i} className='sidebarItems' >
+                      <a className='link' href={item?.path}>
+                          <li className='sidebarItem'>
+                              <item.icon/>{item.title}
+                          </li>
+                      </a>
+              </ul>     
+          )}
       </div>
+      )
+      )}
+      </div>
+  </div>
   )
 }
 

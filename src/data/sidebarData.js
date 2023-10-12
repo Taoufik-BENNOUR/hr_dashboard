@@ -1,0 +1,88 @@
+import { CalendarIcon } from '@chakra-ui/icons';
+import {Timeline, TrendingUp, Search, FlightTakeoff, Factory, LocationCityOutlined, LocationOn, Translate, DateRange, CalendarMonth, Paid, PaidOutlined, SchoolOutlined, DescriptionOutlined, DeveloperBoard, CrisisAlert, ListAlt, Flag, DataUsage, LanOutlined } from '@mui/icons-material';
+
+const sidebarData = [
+  {
+  menuTitle:"",
+  menuItems:[
+    {
+        title:"Keyboard",
+        icon:Search,
+        path:"/"
+    },
+    {
+      title:"Industries",
+      icon:Factory,
+      path:"/"
+    },
+    {
+      title:"Positions",
+      icon:LanOutlined,
+      path:"/"
+    },
+    {
+      title:"Drilling",
+      icon:ListAlt,
+      path:"/"
+    },
+    {
+      title:"Clients",
+      icon:CrisisAlert,
+      path:"/"
+    },
+    {
+      title:"Mobilities",
+      icon:FlightTakeoff,
+      path:"/"
+    },
+    {
+      title:"Residencies",
+      icon:LocationOn,
+      path:"/"
+    },
+    {
+      title:"Languages",
+      icon:Translate,
+      path:"/"
+    },
+    {
+      title:"Nationalities",
+      icon:Flag,
+      path:"/"
+    },
+    {
+      title:"Ages",
+      icon:DataUsage,
+      path:"/"
+    },
+    {
+      title:"Availabilities",
+      icon:CalendarMonth,
+      path:"/"
+    },
+    {
+      title:"Salaries",
+      icon:PaidOutlined,
+      path:"/"
+    },
+    {
+      title:"Softwares",
+      icon:DeveloperBoard,
+      path:"/"
+    },
+    {
+      title:"Educations",
+      icon:SchoolOutlined,
+      path:"/"
+    },
+    {
+      title:"Contracts",
+      icon:DescriptionOutlined,
+      path:"/"
+    },
+  ]
+  },
+  
+];
+
+export default sidebarData;

@@ -6,51 +6,44 @@ body {
     height: 100%;
     width: 85px;
     position: fixed;
-    /* z-index: 1; */
-    /* top: 0; */
     left: 0;
-    background-color: #111;
+    background-color: lightgrey;
     transition: 0.5s;
     overflow-x: hidden;
     padding-top: 60px;
     white-space: nowrap;
   }
   .sidebar:hover{
-    width: 245px;
+    width: 200px;
   }
   
   .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 15px;
+    color: teal;
     display: block;
+    list-style: none;
   }
   
   .sidebar a:hover {
-    color: #f1f1f1;
+  background-color: white  }
+
+  .sidebarItems a li{
+    display: flex;
+    align-items: center;
+    gap: 30px;
   }
-  
-  main .sidebar {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
+
   
   .material-icons,
   .icon-text {
     vertical-align: middle;
   }
   
-  .material-icons {
-    padding-bottom: 3px;
-    margin-right: 30px;
-  }
   
   .mini-sidebar {
-    width: 85px; /* Width of the expanded sidebar */
+    width: 85px; 
   }
   @media screen and (max-height: 450px) {
     .sidebar {
