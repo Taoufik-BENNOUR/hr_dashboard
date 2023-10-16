@@ -4,7 +4,16 @@ import { Info, NotificationsNone, Search, Spa } from "@mui/icons-material";
 import sidebarData from "../../data/sidebarData";
 
 const Sidebar = () => {
-    
+  const [activeMenu, setActiveMenu] = useState(null);
+
+  const toggleMenu = (menuIndex,e) => {
+    e.preventDefault();
+    if (activeMenu === menuIndex) {
+      setActiveMenu(null);
+    } else {
+      setActiveMenu(menuIndex);
+    }
+  };
     return (
       <div className='sidebar'>
       <div className="sidebarWrapper">
@@ -13,11 +22,16 @@ const Sidebar = () => {
           <h3 className="sidebarTitle" >{menu.menuTitle}</h3>
           {menu?.menuItems.map((item,i)=>
               <ul key={i} className='sidebarItems' >
-                      <a className='link' href={item?.path}>
-                          <li className='sidebarItem'>
-                              <item.icon/>{item.title}
+                      <a  className='link' href={item?.path} onClick={(e) => toggleMenu(i,e)}>
+                          <li className={`sidebarItem ${activeMenu === i ? "active" : ""}`} >
+                              <item.icon/> <span>{item.title}</span> 
+                              {activeMenu === i && (
+                            <div className="submenu">
+                              Pop up
+                            </div>)}
                           </li>
                       </a>
+
               </ul>     
           )}
       </div>
