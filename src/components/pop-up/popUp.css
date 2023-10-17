@@ -1,0 +1,24 @@
+
+.pop-up-buttons{
+    width: 50%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:10px 10px 0 0;
+}
+.pop-up-buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    margin: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+.pop-up-content{
+    width: 600px;
+    height: max-content;
+    border-radius:0 10px 10px 10px;
+    background-color: lightgray;
+}

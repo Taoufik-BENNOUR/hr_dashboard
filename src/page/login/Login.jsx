@@ -26,7 +26,6 @@ const Login = () => {
               <input type={"password"} placeholder="password" onChange={(e)=>setpassword(e.target.value)} required/>
               <button className="login-button">Sign in</button>
               {error&& <p className="login-error">{error}</p>}
-
            </form>
         </div>
     </div>

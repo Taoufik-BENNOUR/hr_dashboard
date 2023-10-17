@@ -3,20 +3,23 @@ import Sidebar from "./components/sidebar/Sidebar";
 import "./app.css"
 import CandidateInfoCard from "./components/candidate-info/CandidateInfoCard";
 import Login from "./page/login/Login";
+import PopUp from "./components/pop-up/PopUp";
+import TableLayout from "./components/table/Table";
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar/>
       <div className="container">
         <Sidebar/>
         <div className="content">
-            lorem
-            <CandidateInfoCard/>
-            <Login/>
+            {/* <CandidateInfoCard/> */}
+            {/* <Login/> */}
+            {/* <PopUp/> */}
+            {/* <TableLayout/> */}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

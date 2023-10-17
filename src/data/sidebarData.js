@@ -2,9 +2,7 @@ import { CalendarIcon } from '@chakra-ui/icons';
 import {Timeline, TrendingUp, Search, FlightTakeoff, Factory, LocationCityOutlined, LocationOn, Translate, DateRange, CalendarMonth, Paid, PaidOutlined, SchoolOutlined, DescriptionOutlined, DeveloperBoard, CrisisAlert, ListAlt, Flag, DataUsage, LanOutlined } from '@mui/icons-material';
 
 const sidebarData = [
-  {
-  menuTitle:"",
-  menuItems:[
+
     {
         title:"Keyboard",
         icon:Search,
@@ -80,9 +78,6 @@ const sidebarData = [
       icon:DescriptionOutlined,
       path:"/"
     },
-  ]
-  },
-  
 ];
 
 export default sidebarData;

@@ -1,44 +1,44 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./sidebar.css"
 import { Info, NotificationsNone, Search, Spa } from "@mui/icons-material";
 import sidebarData from "../../data/sidebarData";
+import PopUp from "../pop-up/PopUp";
 
 const Sidebar = () => {
-  const [activeMenu, setActiveMenu] = useState(null);
 
-  const toggleMenu = (menuIndex,e) => {
-    e.preventDefault();
-    if (activeMenu === menuIndex) {
-      setActiveMenu(null);
-    } else {
-      setActiveMenu(menuIndex);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [open, setOpen] = useState(false);
+  const [placement, setPlacement] = useState();
+  const [currentIndex, setCurrentIndex] = useState(null);
+
+  const handleClick = (newPlacement,i) => (event) => {
+    event.preventDefault()
+    setAnchorEl(event.currentTarget);
+    setOpen((prev) => currentIndex !== i || !prev);
+    setPlacement(newPlacement);
+    setCurrentIndex(i)
+
+    
     }
-  };
-    return (
-      <div className='sidebar'>
-      <div className="sidebarWrapper">
-          {sidebarData?.map((menu,i)=>(
-          <div key={i} className="sidebarMenu">
-          <h3 className="sidebarTitle" >{menu.menuTitle}</h3>
-          {menu?.menuItems.map((item,i)=>
-              <ul key={i} className='sidebarItems' >
-                      <a  className='link' href={item?.path} onClick={(e) => toggleMenu(i,e)}>
-                          <li className={`sidebarItem ${activeMenu === i ? "active" : ""}`} >
-                              <item.icon/> <span>{item.title}</span> 
-                              {activeMenu === i && (
-                            <div className="submenu">
-                              Pop up
-                            </div>)}
-                          </li>
-                      </a>
+  
 
+  
+
+
+    return (
+      <div className={`sidebar ${open&& "active"}`}>
+      <div className="sidebarWrapper">
+              <ul lassName='sidebarItems' >
+          {sidebarData.map((item,i)=>
+                     ( <a  onClick={handleClick("right-start",i)} className='link' href={item?.path}>
+                        <li key={i} className={`sidebarItem ${open&& "active"}`}>
+                           {<item.icon/>}<span>{item.title}</span>
+                        </li>
+                      </a>))}
               </ul>     
-          )}
+          <PopUp setOpen={setOpen} open={open} anchorEl={anchorEl} placement={placement} index={currentIndex} />
       </div>
-      )
-      )}
-      </div>
-  </div>
+    </div>
   )
 }
 
