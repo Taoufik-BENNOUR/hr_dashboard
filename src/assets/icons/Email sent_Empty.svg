@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Email_sent_Empty">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Email_sent_Empty" data-name="Email sent_Empty" clip-path="url(#clip-Email_sent_Empty)">
+    <path id="Icon_material-email" data-name="Icon material-email" d="M143.268,6H18.585A15.565,15.565,0,0,0,3.078,21.585L3,115.1a15.631,15.631,0,0,0,15.585,15.585H143.268A15.631,15.631,0,0,0,158.854,115.1V21.585A15.631,15.631,0,0,0,143.268,6Zm8.279,21.063L80.927,72.672,9.937,27.063V17.587L80.927,63.513,149.7,21.585h0Z" transform="translate(2.146 59.659)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M31.7,7.514,35.39,3.82a3.977,3.977,0,0,1,5.64,0L73.375,36.148a3.977,3.977,0,0,1,0,5.64L41.03,74.134a3.977,3.977,0,0,1-5.64,0L31.7,70.44a4,4,0,0,1,.067-5.707l20.049-19.1H3.993A3.984,3.984,0,0,1,0,41.639V36.315a3.984,3.984,0,0,1,3.993-3.993H51.812l-20.049-19.1A3.969,3.969,0,0,1,31.7,7.514Z" transform="translate(181.452 89.023)" fill="#4e6b73"/>
+  </g>
+</svg>

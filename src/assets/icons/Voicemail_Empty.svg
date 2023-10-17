@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Voicemail_Empty">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Voicemail_Empty" clip-path="url(#clip-Voicemail_Empty)">
+    <path id="Icon_ionic-ios-recording" data-name="Icon ionic-ios-recording" d="M198.565,10.266h-.053a58.718,58.718,0,0,0-41.333,100.267H101.125A58.718,58.718,0,0,0,59.792,10.266h-.107a58.667,58.667,0,0,0,0,117.333h138.88a58.667,58.667,0,0,0,0-117.333Zm41.493,58.667a41.547,41.547,0,1,1-41.547-41.707A41.665,41.665,0,0,1,240.058,68.932ZM59.738,110.639a41.707,41.707,0,1,1,41.547-41.707A41.7,41.7,0,0,1,59.738,110.639Z" transform="translate(-1.125 59.068)" fill="#4e6b73"/>
+  </g>
+</svg>

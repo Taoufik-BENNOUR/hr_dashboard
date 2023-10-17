@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Physical_meeting_Filled">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Physical_meeting_Filled" data-name="Physical meeting_Filled" clip-path="url(#clip-Physical_meeting_Filled)">
+    <path id="Icon_ionic-md-people" data-name="Icon ionic-md-people" d="M166.259,72.307c18.04,0,32.8-14.5,32.8-32.216S184.3,7.875,166.259,7.875s-32.8,14.5-32.8,32.216S148.219,72.307,166.259,72.307Zm-87.471,0c18.04,0,32.8-14.5,32.8-32.216S96.828,7.875,78.788,7.875s-32.8,14.5-32.8,32.216S60.747,72.307,78.788,72.307Zm0,23.625c-25.7,0-76.538,12.348-76.538,37.585v28.995H156.887V133.518C156.887,108.281,104.483,95.932,78.788,95.932Zm87.471,5.908a58.351,58.351,0,0,0-9.372.535c12.578,9.129,17.182,15.034,17.182,31.142v28.995H242.8V133.518C242.8,108.281,191.956,101.84,166.259,101.84Z" transform="translate(5.477 42.807)" fill="#7fbe7a" stroke="#7fbe7a" stroke-width="5"/>
+  </g>
+</svg>

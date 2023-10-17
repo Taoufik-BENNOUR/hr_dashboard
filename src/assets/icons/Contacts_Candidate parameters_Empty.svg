@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Contacts_Candidate_parameters_Empty">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Contacts_Candidate_parameters_Empty" data-name="Contacts_Candidate parameters_Empty" clip-path="url(#clip-Contacts_Candidate_parameters_Empty)">
+    <path id="Icon_material-contact-mail" data-name="Icon material-contact-mail" d="M216.693,56.094V45.775L185.737,66.412,154.781,45.775V56.094l30.956,20.637ZM227.012,4.5H20.637A20.7,20.7,0,0,0,0,25.137V169.6a20.7,20.7,0,0,0,20.637,20.637H227.012A20.61,20.61,0,0,0,247.546,169.6l.1-144.462A20.7,20.7,0,0,0,227.012,4.5ZM82.55,35.456A30.956,30.956,0,1,1,51.594,66.412,30.915,30.915,0,0,1,82.55,35.456Zm61.912,123.825H20.637V148.962c0-20.637,41.275-31.988,61.912-31.988s61.912,11.351,61.912,31.988Zm82.55-61.912h-82.55V35.456h82.55Z" transform="translate(4.175 30.631)" fill="none" stroke="#4e6b73" stroke-width="8"/>
+  </g>
+</svg>

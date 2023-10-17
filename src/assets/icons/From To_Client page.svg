@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-From_To_Client_page">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="From_To_Client_page" data-name="From To_Client page" clip-path="url(#clip-From_To_Client_page)">
+    <path id="Icon_material-date-range" data-name="Icon material-date-range" d="M81.3,118.2H55.7v25.6H81.3Zm51.2,0H106.9v25.6h25.6Zm51.2,0H158.1v25.6h25.6Zm25.6-89.6H196.5V3H170.9V28.6H68.5V3H42.9V28.6H30.1A25.484,25.484,0,0,0,4.628,54.2L4.5,233.4A25.593,25.593,0,0,0,30.1,259H209.3a25.675,25.675,0,0,0,25.6-25.6V54.2A25.675,25.675,0,0,0,209.3,28.6Zm0,204.8H30.1V92.6H209.3Z" transform="translate(7.713 -3)" fill="#4e6b73"/>
+  </g>
+</svg>

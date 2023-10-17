@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-LinkedIn_message_received_Filled">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="LinkedIn_message_received_Filled" data-name="LinkedIn message received_Filled" clip-path="url(#clip-LinkedIn_message_received_Filled)">
+    <path id="Icon_awesome-arrow-right" data-name="Icon awesome-arrow-right" d="M31.7,7.514,35.39,3.82a3.977,3.977,0,0,1,5.64,0L73.375,36.148a3.977,3.977,0,0,1,0,5.64L41.03,74.134a3.977,3.977,0,0,1-5.64,0L31.7,70.44a4,4,0,0,1,.067-5.707l20.049-19.1H3.993A3.984,3.984,0,0,1,0,41.639V36.315a3.984,3.984,0,0,1,3.993-3.993H51.812l-20.049-19.1A3.969,3.969,0,0,1,31.7,7.514Z" transform="translate(0 89.023)" fill="#7fbe7a"/>
+    <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M35.141,156.989H2.593V52.176H35.141ZM18.85,37.878A18.939,18.939,0,1,1,37.7,18.85,19.009,19.009,0,0,1,18.85,37.878ZM156.957,156.989H124.479V105.967c0-12.16-.245-27.754-16.922-27.754-16.922,0-19.515,13.211-19.515,26.878v51.9H55.529V52.176H86.745v14.3H87.2c4.345-8.235,14.96-16.926,30.8-16.926,32.94,0,39,21.692,39,49.866v57.575Z" transform="translate(91.734 49.505)" fill="#7fbe7a" stroke="#7fbe7a" stroke-width="5"/>
+  </g>
+</svg>

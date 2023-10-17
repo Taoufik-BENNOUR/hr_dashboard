@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Opportunities_activities_Activities_page">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Opportunities_activities_Activities_page" data-name="Opportunities activities_Activities page" clip-path="url(#clip-Opportunities_activities_Activities_page)">
+    <path id="Icon_ionic-md-checkbox-outline" data-name="Icon ionic-md-checkbox-outline" d="M74.187,105.479,54.278,125.389l64,64L260.5,47.167,240.591,27.257l-122.313,121.6ZM232.055,232.055H32.945V32.945H175.167V4.5H32.945A28.526,28.526,0,0,0,4.5,32.945V232.055A28.526,28.526,0,0,0,32.945,260.5H232.055A28.526,28.526,0,0,0,260.5,232.055V118.278H232.055Z" transform="translate(-4.5 -4.5)" fill="#4e6b73"/>
+  </g>
+</svg>

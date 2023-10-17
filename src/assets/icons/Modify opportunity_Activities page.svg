@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Modify_opportunity_Activities_page">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Modify_opportunity_Activities_page" data-name="Modify opportunity_Activities page" clip-path="url(#clip-Modify_opportunity_Activities_page)">
+    <g id="Icon_feather-settings" data-name="Icon feather-settings" transform="translate(6.23 6.23)">
+      <path id="Tracé_21" data-name="Tracé 21" d="M71.116,42.824c0,16.2-12.9,29.324-28.808,29.324S13.5,59.02,13.5,42.824,26.4,13.5,42.308,13.5,71.116,26.629,71.116,42.824Z" transform="translate(79.462 78.946)" fill="none" stroke="#4e6b73" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+      <path id="Tracé_22" data-name="Tracé 22" d="M205.187,156.479a18.265,18.265,0,0,0,3.653,20.147l.664.664a22.152,22.152,0,1,1-31.328,31.328l-.664-.664A18.414,18.414,0,0,0,146.3,221.017V222.9a22.14,22.14,0,0,1-44.28,0v-1A18.265,18.265,0,0,0,90.06,205.187a18.265,18.265,0,0,0-20.147,3.653l-.664.664A22.152,22.152,0,1,1,37.92,178.177l.664-.664A18.414,18.414,0,0,0,25.522,146.3H23.64a22.14,22.14,0,1,1,0-44.28h1A18.265,18.265,0,0,0,41.352,90.06,18.265,18.265,0,0,0,37.7,69.912l-.664-.664A22.152,22.152,0,1,1,68.363,37.92l.664.664a18.265,18.265,0,0,0,20.147,3.653h.886a18.265,18.265,0,0,0,11.07-16.716V23.64a22.14,22.14,0,1,1,44.28,0v1A18.414,18.414,0,0,0,176.627,37.7l.664-.664a22.152,22.152,0,1,1,31.328,31.328l-.664.664A18.265,18.265,0,0,0,204.3,89.174v.886a18.265,18.265,0,0,0,16.716,11.07H222.9a22.14,22.14,0,1,1,0,44.28h-1a18.265,18.265,0,0,0-16.716,11.07Z" transform="translate(-1.5 -1.5)" fill="none" stroke="#4e6b73" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+    </g>
+  </g>
+</svg>

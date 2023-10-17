@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Experience_Candidate_parameters_Filled">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Experience_Candidate_parameters_Filled" data-name="Experience_Candidate parameters_Filled" clip-path="url(#clip-Experience_Candidate_parameters_Filled)">
+    <text id="Last" transform="translate(0 174.5)" fill="#1f2124" stroke="#1f2125" stroke-width="3" font-size="122" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">Last</tspan></text>
+  </g>
+</svg>

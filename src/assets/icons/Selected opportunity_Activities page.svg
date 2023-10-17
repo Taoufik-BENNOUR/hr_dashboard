@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Selected_opportunity_Activities_page">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Selected_opportunity_Activities_page" data-name="Selected opportunity_Activities page" clip-path="url(#clip-Selected_opportunity_Activities_page)">
+    <path id="Icon_material-format-list-numbered" data-name="Icon material-format-list-numbered" d="M3,181.158H29.947v6.737H16.474v13.474H29.947v6.737H3v13.474H43.421V167.684H3ZM16.474,59.895H29.947V6H3V19.474H16.474ZM3,100.316H27.253L3,128.611v12.126H43.421V127.263H19.168L43.421,98.968V86.842H3ZM70.368,19.474V46.421H259V19.474Zm0,188.632H259V181.158H70.368Zm0-80.842H259V100.316H70.368Z" transform="translate(-3 14.21)" fill="#4e6b73"/>
+  </g>
+</svg>

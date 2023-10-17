@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Email_white">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Email_white" data-name="Email white" clip-path="url(#clip-Email_white)">
+    <path id="Tracé_520" data-name="Tracé 520" d="M27.687,6h197.5c13.578,0,24.687,13.042,24.687,28.982v173.89c0,15.94-11.109,28.982-24.687,28.982H27.687C14.109,237.854,3,224.812,3,208.872V34.982C3,19.042,14.109,6,27.687,6Z" transform="translate(1.755 5.384)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+    <path id="Tracé_521" data-name="Tracé 521" d="M249.871,9,126.435,83.606,3,9" transform="translate(1.755 44.394)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+  </g>
+</svg>

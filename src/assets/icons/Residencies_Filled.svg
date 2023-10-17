@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Residencies_Filled">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Residencies_Filled" clip-path="url(#clip-Residencies_Filled)">
+    <path id="Icon_material-location-on" data-name="Icon material-location-on" d="M97.1,3A89.534,89.534,0,0,0,7.5,92.6C7.5,159.8,97.1,259,97.1,259s89.6-99.2,89.6-166.4A89.534,89.534,0,0,0,97.1,3Zm0,121.6a32,32,0,1,1,32-32A32.012,32.012,0,0,1,97.1,124.6Z" transform="translate(30.876 -3)" fill="#1f2124"/>
+  </g>
+</svg>

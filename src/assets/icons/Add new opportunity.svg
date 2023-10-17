@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Add_new_opportunity">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Add_new_opportunity" data-name="Add new opportunity" clip-path="url(#clip-Add_new_opportunity)">
+    <path id="Icon_ionic-md-checkbox-outline" data-name="Icon ionic-md-checkbox-outline" d="M58.354,82.537,42.968,97.923l49.459,49.459L202.336,37.473,186.951,22.087l-94.523,93.97Zm122,97.818H26.482V26.482H136.391V4.5H26.482A22.045,22.045,0,0,0,4.5,26.482V180.354a22.045,22.045,0,0,0,21.982,21.982H180.354a22.045,22.045,0,0,0,21.982-21.982V92.427H180.354Z" transform="translate(20.258 53.664)" fill="#4e6b73"/>
+    <path id="Icon_awesome-plus" data-name="Icon awesome-plus" d="M72.878,33.083H47.651V7.856A5.607,5.607,0,0,0,42.045,2.25H36.439a5.607,5.607,0,0,0-5.606,5.606V33.083H5.606A5.607,5.607,0,0,0,0,38.689V44.3A5.607,5.607,0,0,0,5.606,49.9H30.833V75.128a5.607,5.607,0,0,0,5.606,5.606h5.606a5.607,5.607,0,0,0,5.606-5.606V49.9H72.878A5.607,5.607,0,0,0,78.484,44.3V38.689A5.607,5.607,0,0,0,72.878,33.083Z" transform="translate(152.758 -2.25)" fill="#4e6b73"/>
+  </g>
+</svg>

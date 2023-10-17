@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Arrow_Empty">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Arrow_Empty" clip-path="url(#clip-Arrow_Empty)">
+    <path id="Icon_awesome-play-circle" data-name="Icon awesome-play-circle" d="M122.581,0A122.581,122.581,0,1,0,245.163,122.581,122.56,122.56,0,0,0,122.581,0ZM179.77,134.444,92.776,184.366a11.884,11.884,0,0,1-17.646-10.38V71.176A11.891,11.891,0,0,1,92.776,60.8l86.993,52.888A11.9,11.9,0,0,1,179.77,134.444Z" transform="translate(250.127 4.964) rotate(90)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+  </g>
+</svg>

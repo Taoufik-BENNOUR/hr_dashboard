@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-PFS_CV_Empty">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="PFS_CV_Empty" data-name="PFS CV_Empty" clip-path="url(#clip-PFS_CV_Empty)">
+    <path id="Union_40" data-name="Union 40" d="M23.1-11859.755a17.672,17.672,0,0,1-17.62-17.62v-84.581A25,25,0,0,1-18-11986.91a25,25,0,0,1,23.483-24.957v-50.514A17.673,17.673,0,0,1,23.1-12080h72.13v44.051a24.817,24.817,0,0,0,24.778,24.778h52.86v27.979l23.811,19.275-23.811,23.854v62.689a17.672,17.672,0,0,1-17.62,17.62Z" transform="translate(40 12084.911)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <path id="Tracé_98" data-name="Tracé 98" d="M29.551,50.529H72.414a2.332,2.332,0,0,0,2.355-2.355h0a13.94,13.94,0,0,0-5.04-10.786L33.79,7.43a15.128,15.128,0,0,0-9.7-3.486h0A3.478,3.478,0,0,0,20.6,7.43V41.579A8.945,8.945,0,0,0,29.551,50.529Z" transform="translate(138.102 0.967)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <line id="Ligne_315" data-name="Ligne 315" x2="124" transform="translate(68.5 105.5)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <path id="Icon_awesome-pen" data-name="Icon awesome-pen" d="M48.77,14.693,70.244,34.869l-46.63,43.81L4.468,80.664A3.909,3.909,0,0,1,.025,76.486l2.13-18L48.77,14.693Zm34.756-3L73.443,2.217a8.427,8.427,0,0,0-11.391,0l-9.486,8.912L74.04,31.3l9.486-8.912a7.249,7.249,0,0,0,0-10.7Z" transform="translate(165.501 87.655)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <line id="Ligne_316" data-name="Ligne 316" x2="103" transform="translate(62.5 125.5)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <line id="Ligne_318" data-name="Ligne 318" x2="76" transform="translate(62.5 145.5)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <line id="Ligne_319" data-name="Ligne 319" x2="49" transform="translate(62.5 165.5)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <path id="Icon_ionic-ios-settings" data-name="Icon ionic-ios-settings" d="M90.722,51.49a12.094,12.094,0,0,1,7.758-11.283,47.936,47.936,0,0,0-5.8-13.975,12.256,12.256,0,0,1-4.919,1.052A12.067,12.067,0,0,1,76.723,10.3a47.791,47.791,0,0,0-13.95-5.8,12.083,12.083,0,0,1-22.565,0,47.936,47.936,0,0,0-13.975,5.8A12.067,12.067,0,0,1,15.2,27.285a11.857,11.857,0,0,1-4.919-1.052,49,49,0,0,0-5.776,14,12.08,12.08,0,0,1,7.758,11.283A12.107,12.107,0,0,1,4.524,62.8a47.936,47.936,0,0,0,5.8,13.975A12.072,12.072,0,0,1,26.258,92.7a48.215,48.215,0,0,0,13.975,5.8,12.061,12.061,0,0,1,22.516,0,47.935,47.935,0,0,0,13.975-5.8A12.084,12.084,0,0,1,92.656,76.772a48.216,48.216,0,0,0,5.8-13.975A12.151,12.151,0,0,1,90.722,51.49ZM51.711,71.045A19.579,19.579,0,1,1,71.29,51.466,19.574,19.574,0,0,1,51.711,71.045Z" transform="translate(-4.5 46.995)" fill="#4e6b73"/>
+  </g>
+</svg>

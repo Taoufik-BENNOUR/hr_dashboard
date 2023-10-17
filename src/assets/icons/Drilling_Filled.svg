@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Drilling_Filled">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Drilling_Filled" clip-path="url(#clip-Drilling_Filled)">
+    <path id="Union_39" data-name="Union 39" d="M156.39,228.73,92.317,164.5v66.189H84.262v-67.5L19.087,228.53l-1.473,6.4-7.849-1.815L48.347,65.5l.961.222V65.4H85.744l.51-.512.511.512h41.425v4.9l37.483,162.839-7.849,1.816Zm-3.417-14.844-22.364-97.159L93.333,154.1Zm-130.469-.2L81.942,154.1,44.793,116.855ZM84.262,145V78.323l-33.23,33.368Zm8.055-1.308,31.925-32.005L92.317,79.625Zm35.278-40.068-7.163-31.121H96.61Zm-79.709-.206L78.672,72.507H55Z" transform="translate(39.397)" fill="#1f2124"/>
+    <g id="Rectangle_10730" data-name="Rectangle 10730" transform="translate(43 227)" fill="#1f2124" stroke="#1f2124" stroke-width="8">
+      <rect width="169" height="29" stroke="none"/>
+      <rect x="4" y="4" width="161" height="21" fill="none"/>
+    </g>
+    <path id="Icon_ionic-ios-flame" data-name="Icon ionic-ios-flame" d="M24.738,3.375c4.524,21-17.019,20.575-16.863,41.712C8,62.4,26.345,68.268,30.416,68.268s21.028-3.681,22.322-23.18C53.846,28.49,39.994,12.641,24.738,3.375Zm11.59,55.33a6.177,6.177,0,0,1-11.918.016,10.576,10.576,0,0,1-.374-2.73c0-6.4,6.333-13.774,6.333-13.774s6.3,7.378,6.3,13.774A9.815,9.815,0,0,1,36.328,58.705Z" transform="translate(97.662 -3.375)" fill="#1f2124"/>
+  </g>
+</svg>

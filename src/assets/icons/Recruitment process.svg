@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Recruitment_process">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Recruitment_process" data-name="Recruitment process" clip-path="url(#clip-Recruitment_process)">
+    <path id="Icon_awesome-arrows-alt-h" data-name="Icon awesome-arrows-alt-h" d="M181.254,21.791V43.88H64.293V21.791a11.51,11.51,0,0,0-19.649-8.139L3.371,54.925a11.51,11.51,0,0,0,0,16.277l41.272,41.272a11.51,11.51,0,0,0,19.649-8.139V82.247H181.254v22.089a11.51,11.51,0,0,0,19.649,8.139L242.175,71.2a11.51,11.51,0,0,0,0-16.277L200.9,13.653A11.51,11.51,0,0,0,181.254,21.791Z" transform="translate(191.064 5.227) rotate(90)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+  </g>
+</svg>

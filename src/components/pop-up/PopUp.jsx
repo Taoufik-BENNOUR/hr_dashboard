@@ -3,15 +3,18 @@ import React, { useState } from 'react'
 import "./popUp.css"
 import { Close, Done } from '@mui/icons-material'
 import TableLayout from '../table/Table'
+
 const PopUp = ({open,anchorEl,placement,setOpen,title}) => {
 
   const handleClose = () =>{
     setOpen(false)
   }
-  const users =["",""]
+  console.log(document.querySelector('.sidebar'));
   return (
     <>
-    <Popper className='pop-up' open={open} anchorEl={anchorEl} placement={placement}>
+    <Popper className='pop-up' style={{ top: '10px', left: '10px' }} PopperProps={{
+          container: document.querySelector('.sidebar')
+        }} open={open} anchorEl={anchorEl} placement={placement}>
     <div className='pop-up-buttons'>
       <button ><Done/></button>
       <button onClick={()=>handleClose()}><Close/></button>

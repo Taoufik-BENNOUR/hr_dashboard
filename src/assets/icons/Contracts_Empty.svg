@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Contracts_Empty">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Contracts_Empty" clip-path="url(#clip-Contracts_Empty)">
+    <path id="Tracé_99" data-name="Tracé 99" d="M107.847,53.28V3.937h-80.8A19.8,19.8,0,0,0,7.312,23.674V230.912a19.8,19.8,0,0,0,19.737,19.737H175.076a19.8,19.8,0,0,0,19.737-19.737V147.024l32.3-31.1L200.686,91.528l-5.873,4.123V81.035H135.6A27.8,27.8,0,0,1,107.847,53.28Z" transform="translate(4.444 0.974)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <path id="Tracé_98" data-name="Tracé 98" d="M31.9,62.734H85.989a2.943,2.943,0,0,0,2.972-2.972h0A17.593,17.593,0,0,0,82.6,46.149L37.246,8.343A19.092,19.092,0,0,0,25,3.945h0a4.389,4.389,0,0,0-4.4,4.4v43.1A11.289,11.289,0,0,0,31.9,62.734Z" transform="translate(109.102 0.967)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <line id="Ligne_315" data-name="Ligne 315" x2="130" transform="translate(33.5 105.5)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <path id="Icon_awesome-pen" data-name="Icon awesome-pen" d="M64.3,19.371l28.311,26.6L31.132,103.727,5.891,106.345a5.154,5.154,0,0,1-5.858-5.508L2.841,77.106,64.3,19.371Zm45.821-3.96L96.825,2.922a11.11,11.11,0,0,0-15.018,0L69.3,14.671l28.311,26.6,12.506-11.749a9.557,9.557,0,0,0,0-14.109Z" transform="translate(136.412 74.812)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <line id="Ligne_316" data-name="Ligne 316" x2="103" transform="translate(33.5 130.5)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <line id="Ligne_318" data-name="Ligne 318" x2="76" transform="translate(33.5 155.5)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+    <line id="Ligne_319" data-name="Ligne 319" x2="49" transform="translate(33.5 180.5)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+  </g>
+</svg>

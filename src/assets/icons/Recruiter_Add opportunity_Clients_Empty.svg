@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Recruiter_Add_opportunity_Clients_Empty">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Recruiter_Add_opportunity_Clients_Empty" data-name="Recruiter_Add opportunity_Clients_Empty" clip-path="url(#clip-Recruiter_Add_opportunity_Clients_Empty)">
+    <path id="Icon_material-people" data-name="Icon material-people" d="M123.788,112.318A52.409,52.409,0,1,0,71.379,59.909,52.19,52.19,0,0,0,123.788,112.318Zm0,34.939C83.083,147.257,1.5,167.7,1.5,208.4v43.674H246.076V208.4C246.076,167.7,164.492,147.257,123.788,147.257Z" transform="translate(4.212 -1.788)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Magnifying_glass_Empty">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Magnifying_glass_Empty" data-name="Magnifying glass_Empty" clip-path="url(#clip-Magnifying_glass_Empty)">
+    <path id="Icon_ionic-ios-search" data-name="Icon ionic-ios-search" d="M257.434,241.964l-71.181-71.848a101.44,101.44,0,1,0-15.4,15.6l70.715,71.381a10.954,10.954,0,0,0,15.463.4A11.026,11.026,0,0,0,257.434,241.964ZM106.54,186.579a80.1,80.1,0,1,1,56.652-23.461A79.605,79.605,0,0,1,106.54,186.579Z" transform="translate(-4.5 -4.493)" fill="#4e6b73"/>
+  </g>
+</svg>

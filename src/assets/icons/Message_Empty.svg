@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Message_Empty">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Message_Empty" clip-path="url(#clip-Message_Empty)">
+    <path id="Icon_material-message" data-name="Icon material-message" d="M220.5,3H27.167A24.134,24.134,0,0,0,3.121,27.167L3,244.666l48.333-48.333H220.5a24.238,24.238,0,0,0,24.167-24.167v-145A24.238,24.238,0,0,0,220.5,3ZM196.333,148h-145V123.833h145Zm0-36.25h-145V87.583h145Zm0-36.25h-145V51.333h145Z" transform="translate(4.167 1.609)" fill="none" stroke="#4e6b73" stroke-width="8"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Mobilities_Empty">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Mobilities_Empty" clip-path="url(#clip-Mobilities_Empty)">
+    <path id="Icon_material-flight-takeoff" data-name="Icon material-flight-takeoff" d="M10.662,190.1h227.49v23.946H10.662ZM244.977,78.032a17.918,17.918,0,0,0-22.031-12.692l-63.578,17L76.754,5.355,53.646,11.461l49.569,85.848L43.708,113.233,20.121,94.795,2.76,99.464,24.551,137.3l9.219,15.924,19.157-5.148,63.578-17,52.083-13.889,63.578-17a18.225,18.225,0,0,0,12.811-22.15Z" transform="translate(5.153 19.434)" fill="none" stroke="#4e6b73" stroke-width="10"/>
+  </g>
+</svg>

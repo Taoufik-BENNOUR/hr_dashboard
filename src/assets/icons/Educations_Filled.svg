@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-Educations_Filled">
+      <rect width="256" height="256"/>
+    </clipPath>
+  </defs>
+  <g id="Educations_Filled" clip-path="url(#clip-Educations_Filled)">
+    <path id="Icon_ionic-md-school" data-name="Icon ionic-md-school" d="M45.927,120.9v45.713l76.368,43.677,76.368-43.677V120.9l-76.368,43.677ZM122.294,4.5,2.25,73.1l120.044,68.6,98.233-56.11v78.993h21.812V73.1Z" transform="translate(5.706 20.605)" fill="#1f2124" stroke="#1f2124" stroke-width="5"/>
+  </g>
+</svg>
