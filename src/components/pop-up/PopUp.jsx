@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import "./popUp.css"
 import { Close, Done } from '@mui/icons-material'
 import TableLayout from '../table/Table'
-const PopUp = ({open,anchorEl,placement,setOpen,index}) => {
+const PopUp = ({open,anchorEl,placement,setOpen,title}) => {
 
   const handleClose = () =>{
     setOpen(false)
@@ -18,7 +18,7 @@ const PopUp = ({open,anchorEl,placement,setOpen,index}) => {
     </div>
       <Box className="pop-up-content" sx={{ p: 1, bgcolor: 'background.paper',
      }}>
-        <TableLayout/>
+        <TableLayout title={title}/>
       </Box>
     </Popper>
   </>

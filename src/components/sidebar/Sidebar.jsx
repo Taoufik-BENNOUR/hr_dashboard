@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./sidebar.css"
 import { Info, NotificationsNone, Search, Spa } from "@mui/icons-material";
 import sidebarData from "../../data/sidebarData";
@@ -10,6 +10,8 @@ const Sidebar = () => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState();
   const [currentIndex, setCurrentIndex] = useState(null);
+  const title = useRef()
+
 
   const handleClick = (newPlacement,i) => (event) => {
     event.preventDefault()
@@ -18,7 +20,7 @@ const Sidebar = () => {
     setPlacement(newPlacement);
     setCurrentIndex(i)
 
-    
+
     }
   
 
@@ -30,13 +32,13 @@ const Sidebar = () => {
       <div className="sidebarWrapper">
               <ul lassName='sidebarItems' >
           {sidebarData.map((item,i)=>
-                     ( <a  onClick={handleClick("right-start",i)} className='link' href={item?.path}>
+                     ( <a  onClick={handleClick("right-start",i)} className={`link ${currentIndex===i && open&& "active"}`} href={item?.path}>
                         <li key={i} className={`sidebarItem ${open&& "active"}`}>
-                           {<item.icon/>}<span>{item.title}</span>
+                           {<item.icon/>}<span ref={title}>{item.title}</span>
                         </li>
                       </a>))}
               </ul>     
-          <PopUp setOpen={setOpen} open={open} anchorEl={anchorEl} placement={placement} index={currentIndex} />
+          <PopUp title={title} setOpen={setOpen} open={open} anchorEl={anchorEl} placement={placement} index={currentIndex} />
       </div>
     </div>
   )
