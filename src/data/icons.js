@@ -30,9 +30,16 @@ import Phases_Empty from "../assets/icons/Phases_Empty.svg"
 import Phases_Filled from "../assets/icons/Phases_Filled.svg"
 import Keyword_filled from "../assets/icons/keyword_filled.svg"
 import Keyword_empty from "../assets/icons/Keyword_empty.svg"
+import Copy_paste from "../assets/icons/Copy paste.svg"
+import LinkedIn from "../assets/icons/LinkedIn.svg"
+import Message_Empty from "../assets/icons/Message_Empty.svg"
 
 
-export {Industries_Filled,
+export {
+    Message_Empty,
+    LinkedIn,
+    Copy_paste,
+    Industries_Filled,
     Industries_Empty,
     Positions_Filled,
     Positions_Empty,

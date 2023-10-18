@@ -5,6 +5,7 @@ import CandidateInfoCard from "./components/candidate-info/CandidateInfoCard";
 import Login from "./page/login/Login";
 import PopUp from "./components/pop-up/PopUp";
 import TableLayout from "./components/table/Table";
+import CandidatePersonalinformations from "./components/candidate-info/CandidatePersonalinformations";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className="container">
         <Sidebar/>
         <div className="content">
+          <CandidatePersonalinformations/>
             {/* <CandidateInfoCard/> */}
             {/* <Login/> */}
             {/* <PopUp/> */}
