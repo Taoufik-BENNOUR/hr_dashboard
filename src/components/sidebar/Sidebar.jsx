@@ -23,17 +23,16 @@ const Sidebar = () => {
 
     }
   
-    const sidebarContainerRef = useRef(null);
 
   
 
 
     return (
-      <div className={`sidebar ${open&& "active"}`}>
-      <div className="sidebarWrapper" ref={sidebarContainerRef}>
+      <div className={`sidebar ${open&& "active"}`} id="sidebar">
+      <div className="sidebarWrapper" >
               <ul lassName='sidebarItems' >
           {sidebarData.map((item,i)=>
-                     ( <a  onClick={handleClick("right-end",i)} className={`link ${currentIndex===i && open&& "active"}`} href={item?.path}>
+                     ( <a  onClick={handleClick("right",i)} className={`link ${currentIndex===i && open&& "active"}`} href={item?.path}>
                         <li key={i} className={`sidebarItem ${open&& "active"}`}>
                           <img className="icons" width={item.size} src={currentIndex===i &&open?item.icon : item.iconEmpty} alt="" /> <span className={`${currentIndex===i&& open&& "active"}`} ref={title}>{item.title}</span>
                         </li>

@@ -9,12 +9,20 @@ const PopUp = ({open,anchorEl,placement,setOpen,title}) => {
   const handleClose = () =>{
     setOpen(false)
   }
-  console.log(document.querySelector('.sidebar'));
+  const element = document.querySelector("#sidebar")
   return (
-    <>
-    <Popper className='pop-up' style={{ top: '10px', left: '10px' }} PopperProps={{
-          container: document.querySelector('.sidebar')
-        }} open={open} anchorEl={anchorEl} placement={placement}>
+    <Box sx={{ width: 200, position: 'relative' }}>
+    <Popper className='pop-up'
+    modifiers= {[
+      {
+        name: 'preventOverflow',
+        options: {
+          boundary: element,
+        },
+      },
+    ]}
+
+  open={open} anchorEl={anchorEl} placement={placement}>
     <div className='pop-up-buttons'>
       <button ><Done/></button>
       <button onClick={()=>handleClose()}><Close/></button>
@@ -24,7 +32,7 @@ const PopUp = ({open,anchorEl,placement,setOpen,title}) => {
         <TableLayout title={title}/>
       </Box>
     </Popper>
-  </>
+  </Box>
   )
 }
 

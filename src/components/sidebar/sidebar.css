@@ -9,15 +9,13 @@ body {
     left: 0;
     background-color: rgba(211, 211, 211, 0.315);
     transition: 0.5s;
-    overflow-x: hidden;
     padding-top: 60px;
     white-space: nowrap;
+    display: block;
+  
+  }
 
-  }
-  .pop-up {
-    position: absolute;
-    z-index: 999; /* Adjust the z-index as needed */
-  }
+
   .sidebar.active{
     width: 200px;
   }

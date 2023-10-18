@@ -3,8 +3,6 @@ import Sidebar from "./components/sidebar/Sidebar";
 import "./app.css"
 import CandidateInfoCard from "./components/candidate-info/CandidateInfoCard";
 import Login from "./page/login/Login";
-import PopUp from "./components/pop-up/PopUp";
-import TableLayout from "./components/table/Table";
 
 function App() {
   return (
@@ -13,7 +11,7 @@ function App() {
       <div className="container">
         <Sidebar/>
         <div className="content">
-            {/* <CandidateInfoCard/> */}
+            <CandidateInfoCard/>
             {/* <Login/> */}
             {/* <PopUp/> */}
             {/* <TableLayout/> */}
