@@ -30,9 +30,13 @@ const Sidebar = () => {
     return (
       <div className={`sidebar ${open&& "active"}`} id="sidebar">
       <div className="sidebarWrapper" >
+<<<<<<< HEAD
               <ul className='sidebarItems' >
+=======
+              <ul lassName='sidebarItems' >
+>>>>>>> b59e298c819d7b3b7cea680ca98391466a54e814
           {sidebarData.map((item,i)=>
-                     ( <a  onClick={handleClick("right-end",i)} className={`link ${currentIndex===i && open&& "active"}`} href={item?.path}>
+                     ( <a  onClick={handleClick("right",i)} className={`link ${currentIndex===i && open&& "active"}`} href={item?.path}>
                         <li key={i} className={`sidebarItem ${open&& "active"}`}>
                           <img className="icons" width={item.size} src={currentIndex===i &&open?item.icon : item.iconEmpty} alt="" /> <span className={`${currentIndex===i&& open&& "active"}`} ref={title}>{item.title}</span>
                         </li>

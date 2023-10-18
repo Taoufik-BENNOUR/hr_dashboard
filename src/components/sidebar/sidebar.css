@@ -9,6 +9,7 @@ body {
     left: 0;
     background-color: rgba(211, 211, 211, 0.315);
     transition: 0.5s;
+<<<<<<< HEAD
     white-space: nowrap;
   }
   .sidebarItems{
@@ -16,6 +17,15 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
   }
+=======
+    padding-top: 60px;
+    white-space: nowrap;
+    display: block;
+  
+  }
+
+
+>>>>>>> b59e298c819d7b3b7cea680ca98391466a54e814
   .sidebar.active{
     width: 200px;
   }
