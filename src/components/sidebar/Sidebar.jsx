@@ -29,12 +29,8 @@ const Sidebar = () => {
 
     return (
       <div className={`sidebar ${open&& "active"}`} id="sidebar">
-      <div className="sidebarWrapper" >
-<<<<<<< HEAD
-              <ul className='sidebarItems' >
-=======
               <ul lassName='sidebarItems' >
->>>>>>> b59e298c819d7b3b7cea680ca98391466a54e814
+
           {sidebarData.map((item,i)=>
                      ( <a  onClick={handleClick("right",i)} className={`link ${currentIndex===i && open&& "active"}`} href={item?.path}>
                         <li key={i} className={`sidebarItem ${open&& "active"}`}>
@@ -44,7 +40,6 @@ const Sidebar = () => {
               </ul>     
           <PopUp title={title} setOpen={setOpen} open={open} anchorEl={anchorEl} placement={placement} index={currentIndex} />
       </div>
-    </div>
   )
 }
 
