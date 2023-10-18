@@ -33,9 +33,15 @@ import Keyword_empty from "../assets/icons/Keyword_empty.svg"
 import Copy_paste from "../assets/icons/Copy paste.svg"
 import LinkedIn from "../assets/icons/LinkedIn.svg"
 import Message_Empty from "../assets/icons/Message_Empty.svg"
+import PFS_CV_Empty from "../assets/icons/PFS CV_Empty.svg"
+import Linkedin_in from "../assets/icons/Linkedin_in.svg"
+import Linkedin_in_white from "../assets/icons/Linkedin_in_white.svg"
 
 
 export {
+    Linkedin_in_white,
+    Linkedin_in,
+    PFS_CV_Empty,
     Message_Empty,
     LinkedIn,
     Copy_paste,

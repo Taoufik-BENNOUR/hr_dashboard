@@ -1,0 +1,35 @@
+.tabCv-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.tabCv-left{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.tabCv-left span{
+    padding: 10px 20px;
+    color: teal;
+    border: 1px solid teal;
+    border-radius:15px 15px 0 0;
+    cursor: pointer;
+}
+.tabCv-left span.selected{
+    background-color: teal;
+    color: white;
+}
+.tabCv-right{
+    display: flex;
+    border: 1px solid teal;
+    border-radius:15px 15px 0 0;
+    overflow: hidden;
+    padding: 0 10px;
+}
+:focus {
+    outline: none;
+}
+input:focus{
+    outline: none;
+}

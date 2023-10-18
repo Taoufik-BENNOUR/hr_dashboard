@@ -6,6 +6,7 @@ import Login from "./page/login/Login";
 import PopUp from "./components/pop-up/PopUp";
 import TableLayout from "./components/table/Table";
 import CandidatePersonalinformations from "./components/candidate-info/CandidatePersonalinformations";
+import TabCV from "./components/TabCV/TabCV";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <CandidatePersonalinformations/>
             {/* <CandidateInfoCard/> */}
             <CandidateInfoCard/>
+            <TabCV/>
             {/* <Login/> */}
             {/* <PopUp/> */}
             {/* <TableLayout/> */}
