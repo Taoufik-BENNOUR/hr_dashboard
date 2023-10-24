@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import "./sidebar.css"
-import { Info, NotificationsNone, Search, Spa } from "@mui/icons-material";
+import { Close, Info, NotificationsNone, Search, Spa } from "@mui/icons-material";
 import sidebarData from "../../data/sidebarData";
 import PopUp from "../pop-up/PopUp";
+import { Keyword_filled } from "../../data/icons";
 
 const Sidebar = () => {
 
@@ -11,6 +12,7 @@ const Sidebar = () => {
   const [placement, setPlacement] = useState();
   const [currentIndex, setCurrentIndex] = useState(null);
 
+  const [openKey, setopenKey] = useState(true);
 
   const handleClick = (newPlacement,i) => (event) => {
     event.preventDefault()
@@ -19,16 +21,30 @@ const Sidebar = () => {
     setPlacement(newPlacement);
     setCurrentIndex(i)
 
-
     }
   
-
+    const handleExpand = (e) => {
+      e.preventDefault()
+      const search = document.querySelector(".search-input");
+      search.classList.toggle("search-expanded");
+    };
   
 
 
     return (
       <div className={`sidebar ${open&& "active"}`} id="sidebar">
               <ul lassName='sidebarItems' >
+              <a onClick={handleExpand} href={"/"}>
+                        <li className={`sidebarItem`}>
+                          <img className="icons" width={25} src={Keyword_filled} alt="" />
+                           <span >Keyword</span>
+          {                <>
+           <input className="search-input" type="search" />
+           <Close className="closeBtn" /></>}
+
+                        </li>
+                      </a>
+
           {sidebarData.map((item,i)=>
                      ( <a  onClick={handleClick("right",i)} className={`link ${currentIndex===i && open&& "active"}`} href={item?.path}>
                         <li key={i} className={`sidebarItem ${open&& "active"}`}>

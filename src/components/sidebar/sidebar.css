@@ -77,3 +77,32 @@ body {
   span.active{
     font-weight:600;
   }
+/* keyword */
+.search-input {
+  font-size: 14px;
+  width: 200px;
+  max-width: 0;
+  padding: 5px;
+  transition: all 0.5s ease;
+  position: absolute;
+  left: 30px;
+  box-sizing: border-box;
+  opacity: 0;
+  outline: none;
+  border: none;
+  height: 25px;
+}
+
+.search-expanded {
+  max-width: 200px;
+  opacity: 1;
+}
+.closeBtn{
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+}
+.close-hidden{
+  visibility: visible;
+}

@@ -24,12 +24,7 @@ const PopUp = ({open,anchorEl,placement,setOpen,index}) => {
     ]}
 
   open={open} anchorEl={anchorEl} placement={placement}>
-{index===0?    <div className="keywords">
-         <img width={20} src={Keyword_filled} alt="" />
-        <input className='keywords-input' type="text" />
-        <Close className='keywords-closeBtn' onClick={()=>handleClose()}></Close>
-    </div>:
-    <>
+
       <div className='pop-up-buttons'>
         <button ><Done/></button>
         <button onClick={()=>handleClose()}><Close/></button>
@@ -38,7 +33,7 @@ const PopUp = ({open,anchorEl,placement,setOpen,index}) => {
       }}>
           <TableLayout />
         </Box>
-       </>}
+  
     </Popper>
   </Box>
   )

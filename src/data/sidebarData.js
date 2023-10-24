@@ -4,13 +4,6 @@ import { Ages_Empty, Ages_Filled, Availabilities_Empty, Availabilities_Filled, C
 const sidebarData = [
 
     {
-        title:"Keywords",
-        icon:Keyword_filled,
-        iconEmpty:Keyword_empty,
-        path:"/",
-        size:25
-    },
-    {
       title:"Industries",
       icon:Industries_Filled,
       iconEmpty:Industries_Empty,
