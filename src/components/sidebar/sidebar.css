@@ -73,9 +73,7 @@ body {
       font-size: 18px;
     }
   }
-  .icons{
-    fill: red;
-  }
+ 
   span.active{
     font-weight:600;
   }

@@ -10,7 +10,6 @@ const Sidebar = () => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState();
   const [currentIndex, setCurrentIndex] = useState(null);
-  const title = useRef()
 
 
   const handleClick = (newPlacement,i) => (event) => {
@@ -30,15 +29,14 @@ const Sidebar = () => {
     return (
       <div className={`sidebar ${open&& "active"}`} id="sidebar">
               <ul lassName='sidebarItems' >
-
           {sidebarData.map((item,i)=>
                      ( <a  onClick={handleClick("right",i)} className={`link ${currentIndex===i && open&& "active"}`} href={item?.path}>
                         <li key={i} className={`sidebarItem ${open&& "active"}`}>
-                          <img className="icons" width={item.size} src={currentIndex===i &&open?item.icon : item.iconEmpty} alt="" /> <span className={`${currentIndex===i&& open&& "active"}`} ref={title}>{item.title}</span>
+                          <img className="icons" width={item.size} src={currentIndex===i &&open?item.icon : item.iconEmpty} alt="" /> <span className={`${currentIndex===i&& open&& "active"}`}>{item.title}</span>
                         </li>
                       </a>))}
               </ul>     
-          <PopUp title={title} setOpen={setOpen} open={open} anchorEl={anchorEl} placement={placement} index={currentIndex} />
+          <PopUp  setOpen={setOpen} open={open} anchorEl={anchorEl} placement={placement} index={currentIndex} />
       </div>
   )
 }

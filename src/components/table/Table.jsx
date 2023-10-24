@@ -2,7 +2,7 @@ import React from 'react'
 import "./table.css"
 
 
-const TableLayout = ({title}) => {
+const TableLayout = () => {
     const users = [
         { column2: 'John', column1: "First name", email: 'john@example.com' },
         { column2: 'Alice', column1: "Last name", email: 'alice@example.com' },
@@ -17,7 +17,7 @@ const TableLayout = ({title}) => {
     <table>
     <tbody>
             <tr>
-                <th style={{width:"20%"}}>{title.current.innerText}</th>
+                <th style={{width:"20%"}}>{"title"}</th>
                 <th style={{width:"40%"}}>New</th>
                 <th style={{width:"40%"}}>Actual</th>
             </tr>

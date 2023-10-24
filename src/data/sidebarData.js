@@ -4,7 +4,7 @@ import { Ages_Empty, Ages_Filled, Availabilities_Empty, Availabilities_Filled, C
 const sidebarData = [
 
     {
-        title:"Keyboard",
+        title:"Keywords",
         icon:Keyword_filled,
         iconEmpty:Keyword_empty,
         path:"/",

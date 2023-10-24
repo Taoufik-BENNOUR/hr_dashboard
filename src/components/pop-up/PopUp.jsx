@@ -3,8 +3,9 @@ import React, { useState } from 'react'
 import "./popUp.css"
 import { Close, Done } from '@mui/icons-material'
 import TableLayout from '../table/Table'
+import { Keyword_filled } from '../../data/icons'
 
-const PopUp = ({open,anchorEl,placement,setOpen,title}) => {
+const PopUp = ({open,anchorEl,placement,setOpen,index}) => {
 
   const handleClose = () =>{
     setOpen(false)
@@ -23,14 +24,21 @@ const PopUp = ({open,anchorEl,placement,setOpen,title}) => {
     ]}
 
   open={open} anchorEl={anchorEl} placement={placement}>
-    <div className='pop-up-buttons'>
-      <button ><Done/></button>
-      <button onClick={()=>handleClose()}><Close/></button>
-    </div>
-      <Box className="pop-up-content" sx={{ p: 1, bgcolor: 'background.paper',
-     }}>
-        <TableLayout title={title}/>
-      </Box>
+{index===0?    <div className="keywords">
+         <img width={20} src={Keyword_filled} alt="" />
+        <input className='keywords-input' type="text" />
+        <Close className='keywords-closeBtn' onClick={()=>handleClose()}></Close>
+    </div>:
+    <>
+      <div className='pop-up-buttons'>
+        <button ><Done/></button>
+        <button onClick={()=>handleClose()}><Close/></button>
+      </div>
+        <Box className="pop-up-content" sx={{ p: 1, bgcolor: 'background.paper',
+      }}>
+          <TableLayout />
+        </Box>
+       </>}
     </Popper>
   </Box>
   )
