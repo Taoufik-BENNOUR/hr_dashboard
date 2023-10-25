@@ -33,7 +33,6 @@ const PopUp = ({open,anchorEl,placement,setOpen,index}) => {
       }}>
           <TableLayout />
         </Box>
-  
     </Popper>
   </Box>
   )
