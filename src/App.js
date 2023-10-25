@@ -7,11 +7,14 @@ import PopUp from "./components/pop-up/PopUp";
 import TableLayout from "./components/table/Table";
 import CandidatePersonalinformations from "./components/candidate-info/CandidatePersonalinformations";
 import TabCV from "./components/TabCV/TabCV";
+import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
+import ResponsiveAppBar from "./components/navbar/Navbar2";
 
 function App() {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
+      <ResponsiveAppBar/>
       <div className="container">
         <Sidebar/>
         <div className="content">
@@ -19,7 +22,6 @@ function App() {
             {/* <CandidateInfoCard/> */}
             <CandidateInfoCard/>
             <TabCV/>
-            
             {/* <Login/> */}
             {/* <PopUp/> */}
             {/* <TableLayout/> */}
