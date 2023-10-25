@@ -19,6 +19,7 @@ function App() {
             {/* <CandidateInfoCard/> */}
             <CandidateInfoCard/>
             <TabCV/>
+            
             {/* <Login/> */}
             {/* <PopUp/> */}
             {/* <TableLayout/> */}

@@ -96,13 +96,27 @@ body {
 .search-expanded {
   max-width: 200px;
   opacity: 1;
+  padding-left: 30px;
 }
-.closeBtn{
+.keyword-icon{
+  z-index: 66;
+}
+/* .closeBtn{
   z-index: 99;
   position: absolute;
   right: 0;
-  visibility: hidden;
+  visibility: visible;
 }
 .close-hidden{
   visibility: visible;
+} */
+.keyword-title{
+  display: none !important;
+}
+
+.nav-keyword .keywordOpen{
+  /* background: white; */
+  /* height: 25px; */
+  /* padding: 3px; */
+  border-radius: 5px;
 }

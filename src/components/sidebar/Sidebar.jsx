@@ -26,7 +26,7 @@ const Sidebar = () => {
     const handleExpand = (e) => {
       e.preventDefault()
       const search = document.querySelector(".search-input");
-      search.classList.toggle("search-expanded");
+      setopenKey(!openKey)
     };
   
 
@@ -34,13 +34,13 @@ const Sidebar = () => {
     return (
       <div className={`sidebar ${open&& "active"}`} id="sidebar">
               <ul lassName='sidebarItems' >
-              <a onClick={handleExpand} href={"/"}>
-                        <li className={`sidebarItem`}>
-                          <img className="icons" width={25} src={Keyword_filled} alt="" />
-                           <span >Keyword</span>
+              <a className="nav-keyword">
+                        <li className={`sidebarItem ${openKey&&"keywordOpen"}`}>
+                          <img onClick={handleExpand} href={"/"} className="keyword-icon" width={25} src={Keyword_filled} alt="" />
+                           <span className={`${openKey && "keyword-title"}`}>Keyword</span>
           {                <>
-           <input className="search-input" type="search" />
-           <Close className="closeBtn" /></>}
+           <input className={`search-input ${openKey && "search-expanded"}`} type="search" />
+           </>}
 
                         </li>
                       </a>
@@ -48,7 +48,8 @@ const Sidebar = () => {
           {sidebarData.map((item,i)=>
                      ( <a  onClick={handleClick("right",i)} className={`link ${currentIndex===i && open&& "active"}`} href={item?.path}>
                         <li key={i} className={`sidebarItem ${open&& "active"}`}>
-                          <img className="icons" width={item.size} src={currentIndex===i &&open?item.icon : item.iconEmpty} alt="" /> <span className={`${currentIndex===i&& open&& "active"}`}>{item.title}</span>
+                          <img className="icons" width={item.size} src={currentIndex===i &&open?item.icon : item.iconEmpty} alt="" /> 
+                          <span className={`${currentIndex===i&& open&& "active"}`}>{item.title}</span>
                         </li>
                       </a>))}
               </ul>     
