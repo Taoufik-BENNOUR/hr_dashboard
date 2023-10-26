@@ -20,10 +20,10 @@ body {
 
 
   .sidebar.active{
-    width: 200px;
+    width: 250px;
   }
   .sidebar:hover{
-    width:200px;
+    width:250px;
     transition: all 0.3s ease;
   }
   .sidebar .sidebarItem.active span{
@@ -33,13 +33,12 @@ body {
     display: inline-block;
   }
   .sidebar a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 15px;
     color: teal;
     display: block;
     list-style: none;
-    width: 100%;
     margin-top: 5px;
   }
 
@@ -81,11 +80,11 @@ body {
 .search-input {
   font-size: 14px;
   width: 200px;
-  max-width: 0;
   padding: 5px;
   transition: all 0.5s ease;
   position: absolute;
-  left: 30px;
+  left: 10px;
+  right: 10px;
   box-sizing: border-box;
   opacity: 0;
   outline: none;
@@ -94,7 +93,7 @@ body {
 }
 
 .search-expanded {
-  max-width: 200px;
+  width: 100%;
   opacity: 1;
   padding-left: 30px;
 }
@@ -112,6 +111,16 @@ body {
 } */
 .keyword-title{
   display: none !important;
+}
+.nav-keyword{
+  width: 600px;
+  /* background: lightgray; */
+}
+.keywordOpen{
+  width: 95%;
+  position: relative;
+  background: lightgray;
+
 }
 
 .nav-keyword .keywordOpen{
