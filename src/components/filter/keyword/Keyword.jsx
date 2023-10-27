@@ -17,7 +17,7 @@ const Keyword = () => {
             {el}
         </div>
         )}
-        {/* <button onClick={()=>handleClick()}>enter</button> */}
+        <button onClick={()=>handleClick()}>enter</button>
     </div>
   )
 }
