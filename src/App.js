@@ -9,6 +9,7 @@ import CandidatePersonalinformations from "./components/candidate-info/Candidate
 import TabCV from "./components/TabCV/TabCV";
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import ResponsiveAppBar from "./components/navbar/Navbar2";
+import Clients from "./components/filter/Clients";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             {/* <CandidateInfoCard/> */}
             <CandidateInfoCard/>
             <TabCV/>
+            <Clients/>
             {/* <Login/> */}
             {/* <PopUp/> */}
             {/* <TableLayout/> */}

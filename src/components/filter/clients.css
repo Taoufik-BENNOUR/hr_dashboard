@@ -1,0 +1,36 @@
+.clients-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-item{
+    background: lightcyan;
+    padding:5px 10px;
+    border-radius: 15px;
+}
+.clients-item:hover{
+    background: lightgreen;
+}
+.clients-left,.clients-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+.clients-search{
+    padding:5px 10px;
+    border-radius: 15px;
+    border: none;
+}
+.selected-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 10px;
+    border-radius: 15px;
+    background: green;
+    color: white;
+}
+.closeBtn{
+    cursor: pointer;
+}
