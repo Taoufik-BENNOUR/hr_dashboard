@@ -120,12 +120,11 @@ body {
   width: 600px;
   background: lightgray;
 }
-.keywordOpen{
+/* .keywordOpen{
   width: 95%;
   position: relative;
   background: lightgray;
-
-}
+} */
 .nav-keyword-container{
   height: 30px;
 }

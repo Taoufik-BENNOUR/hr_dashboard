@@ -10,6 +10,7 @@ import TabCV from "./components/TabCV/TabCV";
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import ResponsiveAppBar from "./components/navbar/Navbar2";
 import Clients from "./components/filter/Clients";
+import Keyword from "./components/filter/keyword/Keyword";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <CandidateInfoCard/>
             <TabCV/>
             <Clients/>
+            <Keyword/>
             {/* <Login/> */}
             {/* <PopUp/> */}
             {/* <TableLayout/> */}

@@ -27,6 +27,9 @@ const Sidebar = () => {
     const handleExpand = (e) => {
       e.preventDefault()
       const search = document.querySelector(".search-input");
+      setOpen((prev) => currentIndex !== 0 || !prev);
+      openKey((prev) =>!prev);
+      setCurrentIndex(0)
       setopenKey(!openKey)
     };
   
@@ -34,7 +37,7 @@ const Sidebar = () => {
 
     return (
       <div className={`sidebar ${open&& "active"}`} id="sidebar">
-              <ul  onClick={handleClick("right",0)} className="nav-keyword-container" >
+              <ul className="nav-keyword-container" >
               <a onClick={handleExpand}  className={`nav-keyword ${currentIndex===0 && open&& "selected"}`}>
                         <li  className={`sidebarItem ${openKey&&"keywordOpen"}`}>
                           <img href={"/"} className="keyword-icon" width={25} src={Keyword_filled} alt="" />
