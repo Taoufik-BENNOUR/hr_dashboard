@@ -34,10 +34,10 @@ const Sidebar = () => {
 
     return (
       <div className={`sidebar ${open&& "active"}`} id="sidebar">
-              <ul lassName='sidebarItems' >
-              <a className="nav-keyword">
-                        <li onClick={handleExpand} className={`sidebarItem ${openKey&&"keywordOpen"}`}>
-                          <img  href={"/"} className="keyword-icon" width={25} src={Keyword_filled} alt="" />
+              <ul  onClick={handleClick("right",0)} className="nav-keyword-container" >
+              <a onClick={handleExpand}  className={`nav-keyword ${currentIndex===0 && open&& "selected"}`}>
+                        <li  className={`sidebarItem ${openKey&&"keywordOpen"}`}>
+                          <img href={"/"} className="keyword-icon" width={25} src={Keyword_filled} alt="" />
                            <span className={`${openKey && "keyword-title"}`}>Keyword</span>
           {                <>
            <input className={`search-input ${openKey && "search-expanded"}`} type="search" />
@@ -47,10 +47,10 @@ const Sidebar = () => {
                       </a>
 
           {sidebarData.map((item,i)=>
-                     ( <a  onClick={handleClick("right",i)} className={`link ${currentIndex===i && open&& "active"}`} href={item?.path}>
-                        <li key={i} className={`sidebarItem ${open&& "active"}`}>
-                          <img className="icons" width={item.size} src={currentIndex===i &&open?item.icon : item.iconEmpty} alt="" /> 
-                          <span className={`${currentIndex===i&& open&& "active"}`}>{item.title}</span>
+                     ( <a  onClick={handleClick("right",i+1)} className={`link ${currentIndex===i+1 && open&& "active"}`} href={item?.path}>
+                        <li key={i+1} className={`sidebarItem ${open&& "active"}`}>
+                          <img className="icons" width={item.size} src={currentIndex===i+1 &&open?item.icon : item.iconEmpty} alt="" /> 
+                          <span className={`${currentIndex===i+1&& open&& "active"}`}>{item.title}</span>
                         </li>
                       </a>))}
               </ul>     

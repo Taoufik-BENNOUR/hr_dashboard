@@ -26,8 +26,8 @@ const PopUp = ({open,anchorEl,placement,setOpen,index}) => {
   open={open} anchorEl={anchorEl} placement={placement}>
 
       <div className='pop-up-buttons'>
-        <button ><Done/></button>
-        <button onClick={()=>handleClose()}><Close/></button>
+        {/* <button ><Done/></button> */}
+        <button style={{visibility:'hidden'}} onClick={()=>handleClose()}><Close/></button>
       </div>
         <Box className="pop-up-content" sx={{ p: 1, bgcolor: 'background.paper',
       }}>

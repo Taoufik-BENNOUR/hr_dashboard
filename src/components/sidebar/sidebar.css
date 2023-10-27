@@ -113,8 +113,12 @@ body {
   display: none !important;
 }
 .nav-keyword{
+  width: 200px;
+  background: lightgray;
+}
+.nav-keyword.selected{
   width: 600px;
-  /* background: lightgray; */
+  background: lightgray;
 }
 .keywordOpen{
   width: 95%;
@@ -122,7 +126,9 @@ body {
   background: lightgray;
 
 }
-
+.nav-keyword-container{
+  height: 30px;
+}
 .nav-keyword .keywordOpen{
   /* background: white; */
   /* height: 25px; */
