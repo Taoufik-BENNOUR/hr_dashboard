@@ -11,7 +11,7 @@ const Keyword = () => {
     }
   return (
     <div>
-        <input onKeyPress={handleClick} type="text" onChange={(e)=>setkeyword(e.target.value)} value={keyword} />
+        {/* <input onKeyPress={handleClick} type="text" onChange={(e)=>setkeyword(e.target.value)} value={keyword} /> */}
         {keywords?.map((el)=>
         <div>
             {el}

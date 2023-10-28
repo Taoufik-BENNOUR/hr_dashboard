@@ -5,6 +5,8 @@ import sidebarData from "../../data/sidebarData";
 import PopUp from "../pop-up/PopUp";
 import { Keyword_filled } from "../../data/icons";
 import PopUpKeyword from "../pop-up/PopUpKeyword";
+import Drilling from "../filter/industries/DrillingFilter";
+import TableLayout from "../table/Table";
 
 const Sidebar = () => {
 
@@ -32,7 +34,16 @@ const Sidebar = () => {
       setCurrentIndex(0)
       setopenKey(!openKey)
     };
-  
+    const getPopupContent = (index) => {
+      switch (index) {
+        case 0:
+          return <TableLayout title={"title"} />;
+        case 4:
+          return <Drilling />;
+        default:
+          return <TableLayout  title={"title"} />; 
+      }
+    };
 
 
     return (
@@ -57,7 +68,7 @@ const Sidebar = () => {
                         </li>
                       </a>))}
               </ul>     
-          <PopUp  setOpen={setOpen} open={open} anchorEl={anchorEl} placement={placement} index={currentIndex} />
+          <PopUp  content={getPopupContent(currentIndex)} setOpen={setOpen} open={open} anchorEl={anchorEl} placement={placement} index={currentIndex} />
           {/* <PopUpKeyword  setOpen={setOpen} open={open} anchorEl={anchorEl} placement={placement}  /> */}
       </div>
   )

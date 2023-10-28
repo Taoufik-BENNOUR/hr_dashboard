@@ -22,7 +22,9 @@
     border-radius:0 10px 10px 10px;
     background-color: lightgray;
 }
-
+.pop-up{
+    background: lightcoral;
+}
 .keywords{
     position: absolute;
     left: -175px;

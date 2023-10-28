@@ -5,7 +5,7 @@ import { Close, Done } from '@mui/icons-material'
 import TableLayout from '../table/Table'
 import { Keyword_filled } from '../../data/icons'
 
-const PopUp = ({open,anchorEl,placement,setOpen,index}) => {
+const PopUp = ({open,anchorEl,placement,setOpen,index,content}) => {
 
   const handleClose = () =>{
     setOpen(false)
@@ -31,7 +31,7 @@ const PopUp = ({open,anchorEl,placement,setOpen,index}) => {
       </div>
         <Box className="pop-up-content" sx={{ p: 1, bgcolor: 'background.paper',
       }}>
-          <TableLayout />
+          {content}
         </Box>
     </Popper>
   </Box>
