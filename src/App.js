@@ -11,6 +11,7 @@ import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/
 import ResponsiveAppBar from "./components/navbar/Navbar2";
 import Clients from "./components/filter/Clients";
 import Keyword from "./components/filter/keyword/Keyword";
+import CopyPaste from "./components/CopyPaste.jsx/CopyPaste";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <TabCV/>
             <Clients/>
             <Keyword/>
+            <CopyPaste/>
             {/* <Login/> */}
             {/* <PopUp/> */}
             {/* <TableLayout/> */}
