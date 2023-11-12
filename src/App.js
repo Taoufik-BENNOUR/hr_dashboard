@@ -12,6 +12,7 @@ import ResponsiveAppBar from "./components/navbar/Navbar2";
 import Clients from "./components/filter/Clients";
 import Keyword from "./components/filter/keyword/Keyword";
 import CopyPaste from "./components/CopyPaste.jsx/CopyPaste";
+import CopyPasteContainer from "./components/CopyPaste.jsx/CopyPasteContainer";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
             <TabCV/>
             <Clients/>
             <Keyword/>
-            <CopyPaste/>
+            <CopyPasteContainer/>
             {/* <Login/> */}
             {/* <PopUp/> */}
             {/* <TableLayout/> */}
