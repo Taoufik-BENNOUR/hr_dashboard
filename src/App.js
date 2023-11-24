@@ -13,6 +13,7 @@ import Clients from "./components/filter/Clients";
 import Keyword from "./components/filter/keyword/Keyword";
 import CopyPaste from "./components/CopyPaste.jsx/CopyPaste";
 import CopyPasteContainer from "./components/CopyPaste.jsx/CopyPasteContainer";
+import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
 
 function App() {
   return (
@@ -25,10 +26,11 @@ function App() {
           <CandidatePersonalinformations/>
             {/* <CandidateInfoCard/> */}
             <CandidateInfoCard/>
-            <TabCV/>
+            {/* <TabCV/>
             <Clients/>
-            <Keyword/>
+            <Keyword/> */}
             <CopyPasteContainer/>
+            <DragAndDrop/>
             {/* <Login/> */}
             {/* <PopUp/> */}
             {/* <TableLayout/> */}

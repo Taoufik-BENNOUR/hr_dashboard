@@ -1,0 +1,11 @@
+.dragAndDrop{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 50%;
+}
+.right iframe{
+    width: 100%;
+    height: 90vh;
+}
