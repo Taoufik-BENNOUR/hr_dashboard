@@ -22,11 +22,11 @@ const DragAndDrop = () => {
   console.log(file);
   return (
     <div className='dragAndDrop'>
-      <div className='left' ref={drop} style={{ cursor: 'move',background:'lightgreen',height:'250px' }}>
+      <div className='left' ref={drop}>
         {file?.name}
       </div>
       <div className='right'>
-        {/* <iframe  src={preview} style={{background:"lightgreen"}}  ></iframe> */}
+        <iframe  src={preview} width={"100%"} height={"100%"} ></iframe>
       </div>
     </div>
   );
