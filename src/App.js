@@ -14,6 +14,7 @@ import Keyword from "./components/filter/keyword/Keyword";
 import CopyPaste from "./components/CopyPaste.jsx/CopyPaste";
 import CopyPasteContainer from "./components/CopyPaste.jsx/CopyPasteContainer";
 import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
+import PreviewPdf2 from "./components/PreviewPdf/PreviewPdf2";
 
 function App() {
   return (
@@ -24,13 +25,14 @@ function App() {
         <Sidebar/>
         <div className="content">
           <CandidatePersonalinformations/>
+          <PreviewPdf2/>
             {/* <CandidateInfoCard/> */}
-            <CandidateInfoCard/>
+            {/* <CandidateInfoCard/> */}
             {/* <TabCV/>
             <Clients/>
             <Keyword/> */}
-            <CopyPasteContainer/>
-            <DragAndDrop/>
+            {/* <CopyPasteContainer/> */}
+            {/* <DragAndDrop/> */}
             {/* <Login/> */}
             {/* <PopUp/> */}
             {/* <TableLayout/> */}
