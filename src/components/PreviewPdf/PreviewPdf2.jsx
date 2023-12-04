@@ -1,17 +1,16 @@
 import React, { useRef, useState } from 'react'
 import { Document, Page,pdfjs } from 'react-pdf'
 import { resume_example } from '../../data/icons';
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+
 const PreviewPdf2 = ({pdf}) => {
     const [numPages, setNumPages] = useState(null);
     const pdfIframeRef = useRef();
-    const onDocumentLoadSuccess = ({ numPages }) => {
-      setNumPages(numPages);
-    };
+
     const [searchText, setSearchText] = useState('');
     const [searchResults, setSearchResults] = useState([]);
 
-    console.log(searchResults);
     const handleSearch = async () => {
       const results = [];
   
@@ -41,17 +40,36 @@ const PreviewPdf2 = ({pdf}) => {
     const goToPage = (page) => {
       setNumPages(page);
     };
-  
+ 
+    const onDocumentLoadSuccess = ({ numPages }) => {
+      setNumPages(numPages);
+    };
     const scrollToWord = (word) => {
-      const iframe = pdfIframeRef;
-      console.log(pdfIframeRef);
-      if (iframe && iframe.contentDocument && iframe.contentDocument.body) {
-        const foundElement = iframe.contentDocument.body.querySelector(`:contains(${word})`);
-        if (foundElement) {
-          foundElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const pdfViewer = pdfIframeRef.current;
+      
+      if (pdfViewer && pdfViewer.container) {
+        const textDivs = pdfViewer.container.querySelectorAll('.textLayer > div');
+        
+        for (let i = 0; i < textDivs.length; i++) {
+          const textDiv = textDivs[i];
+          if (textDiv.textContent.includes(word)) {
+            textDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            break;
+          }
         }
       }
     };
+    // const scrollToWord = (word) => {
+    //   const iframe = pdfIframeRef;
+    //   const i = document.querySelectorAll("react-pdf__Document");
+    //   if (iframe && iframe.contentDocument && iframe.contentDocument.body) {
+    //     const foundElement = iframe.contentDocument.body.querySelector(`:contains(${word})`);
+    //     if (foundElement) {
+    //       foundElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    //     }
+    //   }
+    // };
+    console.log('found',searchResults);
   return (
     <div className="preview-pdf">
         <input
@@ -65,8 +83,12 @@ const PreviewPdf2 = ({pdf}) => {
         
       <Document 
       ref={pdfIframeRef}
+      className="textLayer"
           file={resume_example}
           onLoadSuccess={onDocumentLoadSuccess}
+          renderTextLayer={false}
+          renderInteractiveForms={false}
+          renderMode="canvas"
         >
           {[...Array(numPages).keys()].map((pageIndex) => (
             <Page key={`page_${pageIndex + 1}`} pageNumber={pageIndex + 1} />
