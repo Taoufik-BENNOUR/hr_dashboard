@@ -2,7 +2,6 @@
 .content{
     margin-left: 200px;
 }
-/* mark{
-    background-color: red !important;
-    font-size: inherit;
-} */
+.highlight-word{
+    font: inherit !important;
+}

@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Document, Page,pdfjs } from 'react-pdf'
 import { resume, resume_example } from '../../data/icons';
 import { useCallback } from 'react';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import 'react-pdf/dist/Page/TextLayer.css';
 
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
@@ -12,6 +14,7 @@ const PreviewPdf2 = ({pdf}) => {
 
     const [searchText, setSearchText] = useState('');
     const [searchResults, setSearchResults] = useState([]);
+    const [count, setcount] = useState(null);
 
     const handleSearch = async () => {
       const results = [];
@@ -106,10 +109,13 @@ const PreviewPdf2 = ({pdf}) => {
       };
       function highlightPattern(text, pattern) {
         const regex = new RegExp(pattern, 'gi');
-        return text.replace(regex, (value) => `<mark class=".high">${value}</mark>`);
+        const matches = text.match(regex) || [];
+
+        return text.replace(regex, (value) => `<mark class="highlight-word">${value}</mark>`);
       }
       const textRenderer = useCallback(
-        (textItem) => highlightPattern(textItem.str, searchText),
+        (textItem) =>
+         highlightPattern(textItem.str, searchText),
         [searchText]
       );
   return (
@@ -120,6 +126,7 @@ const PreviewPdf2 = ({pdf}) => {
         value={searchText}
         onChange={(e) => setSearchText(e.target.value)}
       />
+      {count}
       <button onClick={()=>searchForWord(searchText)}>Search</button>
       <div >
       <Document 
@@ -127,8 +134,8 @@ const PreviewPdf2 = ({pdf}) => {
           file={resume_example}
           onLoadSuccess={onDocumentLoadSuccess}
           scale={1}
-          renderTextLayer={false}
-          renderInteractiveForms={false}
+          // renderTextLayer={false}
+          // renderInteractiveForms={false}
           renderMode="canvas"
         >
           {[...Array(numPages).keys()].map((pageIndex) => (
