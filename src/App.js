@@ -15,6 +15,8 @@ import CopyPaste from "./components/CopyPaste.jsx/CopyPaste";
 import CopyPasteContainer from "./components/CopyPaste.jsx/CopyPasteContainer";
 import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
 import PreviewPdf2 from "./components/PreviewPdf/PreviewPdf2";
+import PdfFileViewer from "./components/PreviewPdf/Preview";
+import ReactPdfViewer from "./components/PreviewPdf/ReactPdfViewer";
 
 
 function App() {
@@ -26,7 +28,9 @@ function App() {
         <Sidebar/>
         <div className="content">
           <CandidatePersonalinformations/>
+          {/* <ReactPdfViewer/> */}
           <PreviewPdf2/>
+          {/* <PdfFileViewer/> */}
             {/* <CandidateInfoCard/> */}
             {/* <CandidateInfoCard/> */}
             {/* <TabCV/>

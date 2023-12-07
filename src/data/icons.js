@@ -37,9 +37,11 @@ import PFS_CV_Empty from "../assets/icons/PFS CV_Empty.svg"
 import Linkedin_in from "../assets/icons/Linkedin_in.svg"
 import Linkedin_in_white from "../assets/icons/Linkedin_in_white.svg"
 import resume_example from "../assets/student.pdf"
+import resume from "../assets/resume.pdf"
 
 
 export {
+    resume,
     resume_example,
     Linkedin_in_white,
     Linkedin_in,
