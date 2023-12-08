@@ -16,33 +16,32 @@ const PreviewPdf2 = ({pdf}) => {
     const [searchResults, setSearchResults] = useState([]);
     const [count, setcount] = useState(null);
 
-    const handleSearch = async () => {
-      const results = [];
+    // const handleSearch = async () => {
+    //   const results = [];
+    //   for (let page = 1; page <= numPages; page++) {
+    //     const pageText = await getPageText(page);
+    //     const regex = new RegExp(searchText, 'gi');
+    //     const matches = pageText.match(regex)
+    //     setcount(matches.length)
+    //     if (pageText.toLowerCase().includes(searchText.toLowerCase())) {
+    //       results.push({ pageIndex: page - 1, text: searchText });
+    //     }
+    //   }
+    //   setSearchResults(results);
+    //   // Navigate to the first result
+    //   if (results.length > 0) {
+    //     goToPage(results[0].pageIndex + 1);
+    //     scrollToWord(results[0].text);
+    //     highlightWord(results[0].text);
+    //   }
+    // };
   
-      for (let page = 1; page <= numPages; page++) {
-        const pageText = await getPageText(page);
-        if (pageText.toLowerCase().includes(searchText.toLowerCase())) {
-          results.push({ pageIndex: page - 1, text: searchText });
-        }
-      }
-  
-      setSearchResults(results);
-  
-      // Navigate to the first result
-      if (results.length > 0) {
-        goToPage(results[0].pageIndex + 1);
-        scrollToWord(results[0].text);
-        highlightWord(results[0].text);
-
-      }
-    };
-  
-    const getPageText = async (pageNumber) => {
-      const pdf = await pdfjs.getDocument({ url: resume_example }).promise;
-      const page = await pdf.getPage(pageNumber);
-      const textContent = await page.getTextContent();
-      return textContent.items.map((s) => s.str).join(' ');
-    };
+    // const getPageText = async (pageNumber) => {
+    //   const pdf = await pdfjs.getDocument({ url: resume_example }).promise;
+    //   const page = await pdf.getPage(pageNumber);
+    //   const textContent = await page.getTextContent();
+    //   return textContent.items.map((s) => s.str).join(' ');
+    // };
   
     const goToPage = (page) => {
       setNumPages(page);
@@ -51,62 +50,40 @@ const PreviewPdf2 = ({pdf}) => {
     const onDocumentLoadSuccess = ({ numPages }) => {
       setNumPages(numPages);
     };
-    const highlightWord = (word) => {
-      const pdfViewer = pdfIframeRef.current;
-      if (pdfViewer) {
-        const textDivs = pdfViewer.querySelectorAll('.textLayer>div');
-  
-        textDivs.forEach((textDiv) => {
-          const content = textDiv.textContent;
-          const highlightedContent = content.replace(
-            new RegExp(`\\b${word}\\b`, 'gi'),
-            (match) => `<span class="high">${match}</span>`
-          );
-  
-          textDiv.innerHTML = highlightedContent;
-        });
-      }
-    };
-    // const scrollToWord = (word) => {
-    //   const pdfViewer = pdfIframeRef.current;
-      
-    //   if (pdfViewer && pdfViewer.container) {
-    //     const textDivs = pdfViewer.container.querySelectorAll('.textLayer > div');
-        
-    //     for (let i = 0; i < textDivs.length; i++) {
-    //       const textDiv = textDivs[i];
-    //       if (textDiv.textContent.includes(word)) {
-    //         textDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    //         break;
-    //       }
-    //     }
-    //   }
-    // };
-    const scrollToWord = (word) => {
-      const iframe = pdfIframeRef;
-      const i = document.querySelectorAll("react-pdf__Document");
-      if (iframe && iframe.contentDocument && iframe.contentDocument.body) {
-        const foundElement = iframe.contentDocument.body.querySelector(`:contains(${word})`);
-        if (foundElement) {
-          foundElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-      }
-    };
-      // Function to search for a word in the DOM
-      const searchForWord = (word) => {
-        const elements = document.querySelectorAll('.preview-pdf'); // Select all elements in the DOM
+    // const highlightWord = () => {
+    //  const markElements = document.querySelectorAll('mark')
+    //  markElements.forEach((markElement, index) => {
+    //   // Scroll to each mark element one by one
+    //   markElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-       word !==""&& elements.forEach((element) => {
-          // Check if the element's text content contains the desired word
-          if (element.textContent && element.textContent.includes(word)) {
-            // Split text content into parts before and after the word
-            const parts = element.textContent.split(word);
-            console.log(parts);
-            // Wrap the matched word with a span and apply styling
-            element.innerHTML = `<span style="color: red;">${word}</span>`;
-          }
-        });
+    // });
+    // };
+    const [markElements, setMarkElements] = useState([]);
+    const [currentMarkIndex, setCurrentMarkIndex] = useState(0);
+      // Assuming you have a function to highlight words and update the state with mark elements
+      const updateMarkElements = (e) => {
+        const newMarkElements = document.querySelectorAll('mark');
+        setMarkElements(newMarkElements);
       };
+    const scrollIntoView = (index) => {
+      if (currentMarkIndex !== null && markElements[currentMarkIndex]) {
+        markElements[currentMarkIndex].classList.remove('red');
+      }
+      markElements[index].classList.add('red');
+
+        markElements[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setCurrentMarkIndex(index);
+      
+    };
+    const scrollThroughMarks = () => {
+      const markElements = document.querySelectorAll('mark');
+        markElements.forEach((markElement, index) => {
+          markElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    };
+
+      const [currentMatchIndex, setCurrentMatchIndex] = useState(0);
+
       function highlightPattern(text, pattern) {
         const regex = new RegExp(pattern, 'gi');
         const matches = text.match(regex) || [];
@@ -114,20 +91,43 @@ const PreviewPdf2 = ({pdf}) => {
         return text.replace(regex, (value) => `<mark class="highlight-word">${value}</mark>`);
       }
       const textRenderer = useCallback(
-        (textItem) =>
-         highlightPattern(textItem.str, searchText),
+        (textItem) => highlightPattern(textItem.str, searchText),
         [searchText]
       );
+      const navigateToNextWord = () => {
+        updateMarkElements();
+        const nextIndex = currentMarkIndex + 1;
+        scrollIntoView(nextIndex);
+      };
+    
+      const navigateToPreviousWord = () => {
+        updateMarkElements();
+        const previousIndex = currentMarkIndex - 1;
+        scrollIntoView(previousIndex);
+      };
+      const handleInputChange = (e) => {
+        const inputValue = e.target.value;
+        setSearchText(inputValue)
+      };
   return (
     <div className="preview-pdf">
-        <input
+      <div style={{position:"fixed",top:0,left:50,zIndex:999}}>
+      <input
         type="text"
         placeholder="Search text"
-        value={searchText}
-        onChange={(e) => setSearchText(e.target.value)}
+        onChange={(e)=>handleInputChange(e)} 
       />
+          <button onClick={navigateToPreviousWord} disabled={currentMarkIndex === 0}>
+          Previous
+        </button>
+        <button onClick={navigateToNextWord} disabled={currentMarkIndex === markElements.length - 1}>
+          Next
+        </button>
+      </div>
+
+      {/* <button onClick={updateMarkElements}>cl</button> */}
       {count}
-      <button onClick={()=>searchForWord(searchText)}>Search</button>
+      {/* <button onClick={highlightWord}>Search</button> */}
       <div >
       <Document 
       ref={pdfIframeRef}
