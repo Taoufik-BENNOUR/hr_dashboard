@@ -35,7 +35,7 @@ const ReactPdfViewerTest = () => {
                 }}
             >
                 <Search>
-                    {(renderSearchProps) => {
+                    {(renderSearchProps:RenderSearchProps) => {
                         return (
                             <>
                                 <div
@@ -153,10 +153,7 @@ const ReactPdfViewerTest = () => {
                 
             </div>
             <div
-                style={{
-                    flex: 1,
-                    overflow: 'hidden',
-                }}
+               style={{ height: '700px' }}
             >
                 <Viewer fileUrl={resume} plugins={[searchPluginInstance]} />
             </div>

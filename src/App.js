@@ -16,7 +16,7 @@ import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
 import PreviewPdf2 from "./components/PreviewPdf/PreviewPdf2";
 import PdfFileViewer from "./components/PreviewPdf/Preview";
 import ReactPdfViewer from "./components/PreviewPdf/ReactPdfViewer";
-import ReactPdfViewerTest from "./components/ReactPDFViewer/ReactPdfViewerTest";
+import ReactPdfViewerTest from "./components/ReactPDFViewer/ReactPdfViewerTest.tsx";
 // import ReactPdfViewerTest from "./components/ReactPDFViewer/ReactPdfViewerTest";
 
 
