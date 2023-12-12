@@ -1,4 +1,3 @@
-import Navbar from "./components/navbar/Navbar";
 import Sidebar from "./components/sidebar/Sidebar";
 import "./app.css"
 import CandidateInfoCard from "./components/candidate-info/CandidateInfoCard";
@@ -17,6 +16,8 @@ import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
 import PreviewPdf2 from "./components/PreviewPdf/PreviewPdf2";
 import PdfFileViewer from "./components/PreviewPdf/Preview";
 import ReactPdfViewer from "./components/PreviewPdf/ReactPdfViewer";
+import ReactPdfViewerTest from "./components/ReactPDFViewer/ReactPdfViewerTest";
+// import ReactPdfViewerTest from "./components/ReactPDFViewer/ReactPdfViewerTest";
 
 
 function App() {
@@ -28,8 +29,9 @@ function App() {
         <Sidebar/>
         <div className="content">
           <CandidatePersonalinformations/>
+          <ReactPdfViewerTest/>
           {/* <ReactPdfViewer/> */}
-          <PreviewPdf2/>
+          {/* <PreviewPdf2/> */}
           {/* <PdfFileViewer/> */}
             {/* <CandidateInfoCard/> */}
             {/* <CandidateInfoCard/> */}
