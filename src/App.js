@@ -42,7 +42,7 @@ function App() {
             {/* <DragAndDrop/> */}
             {/* <Login/> */}
             {/* <PopUp/> */}
-            {/* <TableLayout/> */}
+            <TableLayout/>
         </div>
       </div>
     </>
