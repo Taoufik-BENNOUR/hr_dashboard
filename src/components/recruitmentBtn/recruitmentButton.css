@@ -1,0 +1,25 @@
+
+
+select.recruitmentBtn-container{
+    -webkit-appearance: none;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.recruitmentBtn-0{
+    background-color: green;
+    color: white;
+}
+.recruitmentBtn-1{
+    background-color: lightblue;
+    color: teal;
+}
+.recruitmentBtn-2{
+    background-color: lightcoral;
+    color: white;
+}
+.recruitmentBtn-3{
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,69 @@
+.import-cv-container{
+    margin: 50px;
+}
+.cv-upload-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+.personal-cv-upload{
+    background: teal;
+    color: teal;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.personal-cv-upload-label,.linkedin-cv-upload-label{
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+}
+.label-content{
+    display: flex;
+    align-items: center;
+}
+.drag-drop-personal-cv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    border-radius: 5px;
+    margin:5px 0;
+    background: white;
+}
+.linkedin-cv-upload{
+    background: #0077b5;
+    color: #0077b5;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+.drag-over{
+    border: 3px dashed white;
+    opacity: 0.6;
+}
+.react-pdf__Page__annotations.annotationLayer{
+    display: none !important;
+}
+
+.previewPdfBtn{
+    border: none;
+    background: white;
+    color: teal;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.resizeBtnPDF{
+    z-index: 99 !important;
+    margin: 10px;
+}
+

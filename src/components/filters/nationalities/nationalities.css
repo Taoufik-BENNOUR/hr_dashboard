@@ -1,0 +1,47 @@
+.nationalities-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.nationalities-item{
+    background: lightcyan;
+    padding:5px 10px;
+    border-radius: 10px;
+}
+
+.nationalities-item:hover{
+    background: lightgreen;
+}
+.nationalities-left,.nationalities-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2px;
+}
+.nationalities-search{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.selected-nationalities{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 10px;
+    border-radius: 10px;
+    background: green;
+    color: white;
+}
+.selected-nationalities .closeBtn{
+    height: 20px;
+    cursor: pointer;
+}
+.hidden{
+    visibility: hidden;
+}
+.empty{
+    visibility: hidden;
+}

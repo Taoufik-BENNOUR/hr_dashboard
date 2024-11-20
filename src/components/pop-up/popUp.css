@@ -7,6 +7,7 @@
   border-radius: 10px 10px 0 0;
   position: absolute;
   top: -34px;
+  z-index: 999;
   right: 0;
 }
 .pop-up-buttons button {
@@ -21,8 +22,8 @@
 }
 .pop-up-content {
   width: 600px;
-  height: max-content;
+  min-height:24px;
   border-radius: 0 0px 10px 0px;
-  background-color: rgb(176, 164, 164);
+  background-color: rgb(176, 164, 164) !important;
   color: #000;
 }

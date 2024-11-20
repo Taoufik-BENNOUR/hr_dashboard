@@ -1,17 +1,21 @@
-.search{
-    padding: 5px;
-    border-radius: 10px;
-    background-color: rgba(211, 211, 211, 0.386);
+
+.search input{
+background-color: white;
+padding: 5px;
+border-radius: 10px;
+background: rgba(211, 211, 211, 0.603);
 }
-input::placeholder {
+.css-q0jhri-MuiInputBase-root-MuiInput-root:before {
+  display: none;
+  }
+  .search input::placeholder {
     color: teal;
-    opacity: 1; 
   }
 
-  .navLink a:hover{
-    border: 1px solid teal;
-    border-radius: 10px;
+
+  .navlink button:hover span{
+    border: 1px solid teal !important;
   }
-  .profile-pic{
-    margin-right: 10px;
+  .navlink a{
+    text-decoration: none;
   }

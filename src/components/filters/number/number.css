@@ -1,0 +1,34 @@
+.number-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+}
+.number-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.number-input input{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    color: black;
+}
+.number-input.filled {
+    background-color: green;
+    color: white;
+}
+.number-input input.filled{
+    color: white;
+}
+.validateBtn{
+    border:1px solid green;
+    color: green;
+    background-color: white;
+}

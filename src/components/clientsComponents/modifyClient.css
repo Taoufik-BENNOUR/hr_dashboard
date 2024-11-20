@@ -1,0 +1,14 @@
+.modify-client-item{
+    padding:5px;
+    border-radius: 10px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    background-color: lightblue;
+}
+.modify-client-item img{
+    width: 25px;
+}
+.modify-client-item.filled{
+    background: green;
+}

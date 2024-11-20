@@ -1,0 +1,18 @@
+.industries-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+.industries-item{
+    background: lightcyan;
+    padding:5px 10px;
+    border-radius: 10px;
+}
+.industries-item:hover{
+    background: lightgreen;
+}
+.industries-item.selected{
+    background: green;
+    color: white;
+}

@@ -1,0 +1,8 @@
+.preview-pdf{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 80vh;
+}
+mark.highlight-word{
+    font: inherit !important;
+}

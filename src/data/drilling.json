@@ -1,0 +1,61 @@
+{
+    "drillingRigs":
+        {
+            "title":"Drilling rigs",
+            "content":[
+                "Land rig",
+                "Platform rig",
+                "Barge rig",
+                "Semi-submensible rig",
+                "Jack-up rig",
+                "Drillship rig"
+
+            ]
+        }
+    ,
+    "drillingPositions":
+        {
+            "title":"Drilling positions",
+            "content":[
+                "Drilling manager",
+                "Well superintendent",
+                "Drilling superintendent",
+                "Senior well supervisor",
+                "Senior drilling engineer",
+                "Well supervisor",
+                "Drilling engineer",
+                "Fluid & cement superintendent",
+                "Senior drilling supervisor",
+                "Senior fluid & cement superintendent",
+                "Drilling supervisor",
+                "Fluid & cement supervisor",
+                "Night drilling supervisor",
+                "Logistic superintendent",
+                "Completion superintendent",
+                "Logical supervisor",
+                "Completion supervisor",
+                "HSE supervisor",
+                "Senior competion engineer",
+                "HSE advisor",
+                "Completion engineer",
+                "Inspector"
+            ]}
+        ,
+        "rigPositions": {
+            "title":"Rig positions",
+            "content":[
+                "Rig manager",
+                "Offshore installation manager",
+                "Toolpusher",
+                "Maintenance superintendent",
+                "Driller",
+                "Chief mechanical",
+                "Assistant driller",
+                "Mechanical technician",
+                "Material man",
+                "Chief electrical",
+                "Satefy advisor",
+                "Electrical technician"
+            ]
+        }
+}

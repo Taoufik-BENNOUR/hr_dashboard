@@ -1,0 +1,23 @@
+.planning-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+.durationNumber{
+    display: flex;
+    gap: 2px;
+}
+
+.durationNumber input{
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 10px;
+    height: 32px;
+}
+.durationDay{
+    width: 100%;
+}
+.durationDay .availability-item{
+    margin-bottom: 2px;
+}

@@ -1,33 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import "./table.css";
+import { Clear } from "@mui/icons-material";
+import { Cross } from "../../data/icons";
 
 const TableLayout = ({ title }) => {
-  const users = [
-    { column2: "John", column1: "First name", email: "john@example.com" },
-    { column2: "Alice", column1: "Last name", email: "alice@example.com" },
-    { column2: "Bob", column1: "Email 01", email: "bob@example.com" },
-    { column2: "Bob", column1: "Email 02", email: "bob@example.com" },
-    { column2: "Bob", column1: "Phone 01", email: "bob@example.com" },
-    { column2: "Bob", column1: "Phone 02", email: "bob@example.com" },
-    { column2: "Bob", column1: "LinkedIn link", email: "bob@example.com" }
+  const usersData = [
+    { id: Math.floor(Math.random()*100), fistName: "John", lastName: "Wer",CandidateExisting: "Last name"},
+    { id: Math.floor(Math.random()*100), fistName: "John", lastName: "Wer",CandidateExisting: "Last name"},
+    { id: Math.floor(Math.random()*100), fistName: "John", lastName: "Wer",CandidateExisting: "Last name"},
+    { id: Math.floor(Math.random()*100), fistName: "John", lastName: "Wer",CandidateExisting: "Last name"},
   ];
+  const [users, setusers] = useState(usersData)
+  const handleDelete = (id) =>{
+    const filtredData = users.filter((el,i)=>el.id !== id)
+    setusers(filtredData)
+  }
 
   return (
-    <table>
-      <tbody>
+    <table className="import-cv-table-container">
+        <thead>
         <tr>
-          <th style={{ width: "20%" }}>{title.current.innerText}</th>
-          <th style={{ width: "40%" }}>New</th>
-          <th style={{ width: "40%" }}>Actual</th>
+          <th className="table-header" ></th>
+          <th className="table-header" ></th>
+          <th className="table-header" style={{ width: "20%" }}>First name</th>
+          <th className="table-header" style={{ width: "20%" }}>Last name</th>
+          <th className="table-header" style={{ width: "50%" }}>Candidate existing</th>
+          <th className="table-header" style={{ width: "5%" }}></th>
         </tr>
-        {users.map(user => (
+        </thead>
+        <tbody>
+        {users.map((user,i) => (
           <tr key={user.id}>
-            <td style={{ width: "20%" }}>{user.column1}</td>
-            <td style={{ width: "40%" }}>{user.column2}</td>
-            <td style={{ width: "40%" }}>{user.email}</td>
+            <td>{i+1}</td>
+            <td className="edit">Edit</td>
+            <td style={{ width: "20%" }}>{user.fistName}</td>
+            <td style={{ width: "20%" }}>{user.lastName}</td>
+            <td style={{ width: "50%" }}>{user.CandidateExisting}</td>
+            <td style={{ width: "5%" }} className="removeBtn"><img src={Cross} width={15} alt="" onClick={()=>handleDelete(user.id)} /></td>
           </tr>
         ))}
-      </tbody>
+        </tbody>
     </table>
   );
 };

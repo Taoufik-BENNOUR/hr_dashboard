@@ -1,0 +1,28 @@
+
+.location-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border: 1px solid rgb(1, 44, 51);;
+    border-radius: 10px;
+    padding: 5px 0;
+    height: 25px;
+
+}
+.client-selected-countries{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2px;
+    border-radius: 10px;
+    font-size: 14px;
+    background: green;
+    color: white;
+    height: 30px;
+    margin-bottom: 5px;
+}

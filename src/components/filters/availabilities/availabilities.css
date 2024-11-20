@@ -1,0 +1,37 @@
+.availability-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+.availability-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+}
+.availability-item{
+    padding:5px 10px;
+    border-radius: 10px;
+    background: white;
+}
+.css-1vs7z2v-MuiYearCalendar-root ,.availability-calendar{
+    background: white;
+    width: 100% !important;
+    height: 300px !important;
+}
+
+.availability-title{
+        color: white;
+        font-weight: 400;
+        text-decoration: underline;
+        margin-bottom: 5px;
+        padding: 5px;
+        text-align: center;
+}
+.availability-item:hover{
+    background: lightgreen;
+}
+.availability-item.selected{
+    background: green;
+    color: white;
+}

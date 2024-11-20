@@ -5,9 +5,17 @@ import GlobalCandidateArea from "./components/globalCandidateArea/GlobalCandidat
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./page/login/Login";
 import { useState } from "react";
-
+import { useFilters } from "./context/FiltersContext/FiltersContext";
+import CandidateFile from "./components/CandidateFile/CandidateFile";
+import ReactPdfViewer from "./components/reactPdfViewer/ReactPdfViewer";
+import Clients from "./page/clients/Clients";
+import sidebarData from "./data/sidebarData";
+import RecruitmentButton from "./components/recruitmentBtn/RecruitmentButton";
+import Opportunities from "./page/opportunities/Opportunities";
+import RatingComponent from "./components/rating/RatingComponent";
 function App() {
   const [selectedCandidates, setSelectedCandidates] = useState(0);
+  const { keywords,selectedIndustries,selectedDrillingRigs } = useFilters();
   return (
     <>
       {/* <div>
@@ -23,14 +31,29 @@ function App() {
         <Switch>
           <Route path="/login">
             <div className="contentLogin">
-              <Login />
+              <RatingComponent iconsCount={3}/>
+              <RatingComponent iconsCount={4} isSingle={true}/>
+              {/* <CandidateFile /> */}
+              {/* <RecruitmentButton/> */}
+            </div>
+          </Route>
+          <Route path="/clients">
+          <div>
+              <Navbar />
+                  <Clients  />
+            </div>
+          </Route>
+          <Route path="/opportunities">
+          <div>
+              <Navbar />
+                  <Opportunities  />
             </div>
           </Route>
           <Route path="/">
             <div>
               <Navbar />
               <div className="container">
-                <Sidebar selectedCandidates={selectedCandidates} />
+                <Sidebar pageName={"home"} sidebarData={sidebarData} selectedCandidates={selectedCandidates} />
                 <div className="content">
                   <GlobalCandidateArea selectedItem={item => setSelectedCandidates(item)} />
                 </div>

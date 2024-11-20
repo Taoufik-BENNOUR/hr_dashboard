@@ -1,8 +1,16 @@
 import { useState } from "react";
 import { Keyword_empty, LinkedIn, Linkedin_in, Linkedin_in_white, PFS_CV_Empty } from "../../data/icons";
 import "./tabcv.css";
+import { Icon, MinimalButton, Position, Tooltip} from '@react-pdf-viewer/core';
+import { NextIcon, PreviousIcon} from '@react-pdf-viewer/search';
+import '@react-pdf-viewer/zoom/lib/styles/index.css';
 
-const TabCV = () => {
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/search/lib/styles/index.css';
+
+const TabCV = ({Search,buttons}) => {
+
+
   const [selectedTab, setSelectedTab] = useState("CV 1");
 
   const handleTabClick = tabName => {
@@ -25,8 +33,67 @@ const TabCV = () => {
         </span>
       </div>
       <div className="tabCv-right">
-        <img width={25} src={Keyword_empty} alt="" />
-        <input type="text" placeholder="Research on CV" style={{ background: "transparent" }} />
+        <Search>
+                {(renderSearchProps) => {
+                    return (
+                        <>
+                              <img width={25} src={Keyword_empty} alt="" />
+                            <div
+                            >
+                                <input
+                                    style={{
+                                        border: 'none',
+                                        width:"70%"
+                                    }}
+                                    placeholder="Enter to search"
+                                    type="text"
+                                    value={renderSearchProps.keyword}
+                                    onChange={(e) => {
+                                        renderSearchProps.setKeyword(e.target.value);
+                                    }}
+                                    onKeyDown={(e) => {
+                                      if (e.key === "Enter") {
+                                          renderSearchProps.search().then(() => {
+                                              renderSearchProps.jumpToNextMatch();
+                                          });
+                                      }
+                                  }}
+                                />
+
+                            </div>
+                            {(
+                                        <div style={{fontSize:12}}>
+                                            {renderSearchProps.currentMatch} of {renderSearchProps.numberOfMatches}
+                                        </div>
+                                    )}
+                            <div style={{ padding: '0 2px' }}>
+                                <Tooltip
+                                    position={Position.BottomCenter}
+                                    target={
+                                        <MinimalButton onClick={renderSearchProps.jumpToPreviousMatch}>
+                                            <PreviousIcon />
+                                        </MinimalButton>
+                                    }
+                                    content={() => 'Previous match'}
+                                    offset={{ left: 0, top: 8 }}
+                                />
+                            </div>
+                            <div style={{ padding: '0 2px' }}>
+                                <Tooltip
+                                    position={Position.BottomCenter}
+                                    target={
+                                        <MinimalButton onClick={renderSearchProps.jumpToNextMatch}>
+                                            <NextIcon />
+                                        </MinimalButton>
+                                    }
+                                    content={() => 'Next match'}
+                                    offset={{ left: 0, top: 8 }}
+                                />
+                            </div>
+                        </>
+                    );
+                }}
+            </Search>
       </div>
     </div>
   );

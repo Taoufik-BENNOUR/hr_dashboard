@@ -1,0 +1,28 @@
+{
+    "clients": [
+      { "value": "Arkema", "label": "Arkema" },
+      { "value": "Geocean", "label": "Geocean" },
+      { "value": "GTT", "label": "GTT" },
+      { "value": "Ineos", "label": "Ineos" },
+      { "value": "Maurel & Prom", "label": "Maurel & Prom" },
+      { "value": "Perenco", "label": "Perenco" },
+      { "value": "Subsea 7", "label": "Subsea 7" },
+      { "value": "Technip Energies", "label": "Technip Energies" },
+      { "value": "TotalEnergies Angola", "label": "TotalEnergies Angola" },
+      { "value": "TotalEnergies Argentina", "label": "TotalEnergies Argentina" },
+      { "value": "TotalEnergies Brasil", "label": "TotalEnergies Brasil" },
+      { "value": "TotalEnergies Bulgaria", "label": "TotalEnergies Bulgaria" },
+      { "value": "TotalEnergies Congo", "label": "TotalEnergies Congo" },
+      { "value": "TotalEnergies Indonesia", "label": "TotalEnergies Indonesia" },
+      { "value": "TotalEnergies Gabon", "label": "TotalEnergies Gabon" },
+      { "value": "TotalEnergies Malaysia", "label": "TotalEnergies Malaysia" },
+      { "value": "TotalEnergies Romania", "label": "TotalEnergies Romania" },
+      { "value": "TotalEnergies Uganda", "label": "TotalEnergies Uganda" },
+      { "value": "TotalEnergies Venezuela", "label": "TotalEnergies Venezuela" },
+      { "value": "TotalEnergies Yemen", "label": "TotalEnergies Yemen" },
+      { "value": "Varo", "label": "Varo" },
+      { "value": "Varo Argentina", "label": "Varo Argentina" },
+      { "value": "Vulcain", "label": "Vulcain" },
+      { "value": "Vulcain Argentina", "label": "Vulcain Argentina" }
+    ]
+  }

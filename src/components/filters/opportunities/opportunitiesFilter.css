@@ -1,0 +1,44 @@
+
+.opportunities-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    /* flex-wrap: wrap; */
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 800px;
+}
+.opportunities-input{
+    height: 32px;
+    margin-bottom: 10px;
+ }
+ .opportunities-input input{
+    padding-left: 15px;
+ }
+ .opportunities-input input::placeholder{
+color: teal;
+ }
+.opportunities-item{
+    background: lightcyan;
+    padding:5px 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    gap: 10px;
+
+}
+.opportunities-item .title{
+    width: 30%;
+}
+.opportunities-item .info{
+    flex: 6;
+}
+.opportunities-item .month{
+    width:15%;
+}
+.opportunities-item.selected{
+    background: green;
+    color: white;
+}

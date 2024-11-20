@@ -1,0 +1,116 @@
+.experience-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.experience-block{
+    width: 49%;
+}
+.experience-block h4{
+    color: white;
+    text-align:center;
+}
+.experience-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(1, 44, 51);
+    width: 100%;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-bottom: 1px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid rgb(1, 44, 51);
+    border-radius: 10px;
+    background: lightblue;
+    padding: 0 5px;
+    height: 32px;
+}
+.experience-header-container,.experience-item-container,.experience-item-date{
+    display: flex;
+    gap: 2px;
+}
+.experience-item{
+    border-radius: 10px;
+    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+    background-color: lightblue;
+    width: 100%;
+    font-size: 14px;
+    height: 32px;  
+    /* overflow: hidden; */
+}
+.experience-item span{
+    margin-left: 10px;
+}
+.experience-item input{
+    border-radius: 10px;  
+    border: none;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+}
+.experience-item:has(.css-b62m3t-container){
+    overflow: visible;
+}
+.experience-item .css-b62m3t-container{
+    width: 100%;
+}
+.experience-item-icon{
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    height:32px;
+    padding:0 5px;
+    margin-bottom: 1px;
+}
+.experience-item-icon.selected{
+    background: rgb(1, 44, 51);
+}
+.experience-item-icon.navigate{
+    background: rgb(1, 44, 51);
+    color: white;
+    border-radius: 50%;
+}
+.experience-item.filled{
+background-color: green;
+color: white;
+}
+.experience-item.fill{
+    background: white;
+}
+.experience-item-date{
+    align-items: center;
+    justify-content: space-around;
+    /* width:50% !important; */
+}
+.placeholder{
+    visibility: hidden;
+}
+.experience-calendar{
+    background: white;
+    /* position: absolute; */
+    /* bottom: 40px; */
+}
+
+.css-1hb7zxy-IndicatorsContainer{
+   display:none !important;
+   background-color: red;
+}
+/*selection*/
+.css-1n6sfyn-MenuList{
+    max-height: 100px !important;
+}
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input{
+padding: 2px  !important;
+font-size: 14px !important;
+height: 100% !important;
+}
+.css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root{
+    padding: 1px !important;
+}

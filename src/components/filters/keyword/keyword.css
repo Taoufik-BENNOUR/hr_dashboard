@@ -1,0 +1,30 @@
+.keyword-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.keyword-item{
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.keyword-search{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.keywords-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: lightblue;
+}
+.keyword-img{
+    width: 25px;
+    cursor: pointer;
+}

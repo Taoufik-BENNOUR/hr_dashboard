@@ -1,0 +1,245 @@
+.candidate-file{
+    margin: 0 auto;
+}
+.candidate-file img{
+    cursor: pointer;
+}
+form.candidate-file-email-form {
+    border-radius: 10px;
+    border: 1px solid teal;
+    overflow: hidden;
+    /* margin-top: 10px; */
+  }
+
+  form.candidate-file-email-form textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    line-height:1.9rem;
+    position: relative;
+    border: none;
+    box-sizing: border-box;
+    outline:none;
+  }
+  .lines-textarea{
+  background-image: repeating-linear-gradient(
+     white,
+     white 1.7rem,
+      lightblue 1.8rem 1.85rem
+      ) !important;
+  }
+
+  hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+  }
+.candidate-file .contact-icons-container{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid teal;
+    background: lightblue;
+    gap: 20px;
+    height: 40px;  
+}
+.candidate-file .contact-icons-container .selected{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lightblue;
+    gap: 20px;
+    height: 40px;
+    padding: 0 20px;  
+}
+.candidate-file .contact-icons-container .selected div{
+display: flex;
+gap: 2px;
+}
+.contact-selected-img{
+    width: 25px;
+    background: white;
+    padding:2px 5px;
+    border-radius: 10px;
+}
+.contact-icons-container .left img,.contact-icons-container .right img{
+    width: 30px;
+}
+.contact-icons-container .left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 11;
+}
+.contact-icons-container .right{
+    flex: 1;
+    background: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.contact-icons-container .left img{
+    background: white;
+    padding:2px 5px;
+    border-radius: 10px;
+}
+.candidate-file-message-history{
+    margin-top: 10px;
+}
+.message-history-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.message-history-buttons label{
+    display: flex;
+    align-items: center;
+    border: none;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    height: 32px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+.message-history-buttons input{
+    display: none;
+}
+.message-history-buttons .icon{
+    width: 20px;
+    
+}
+.message-history-buttons span{
+    flex: 2;
+}
+.Open{
+    background-color:rgba(102, 51, 153, 0.788);
+}
+.Open.checked{
+    color: rgba(102, 51, 153, 0.788);
+    border: 1px solid rgba(102, 51, 153, 0.788);
+    background-color: white;
+    text-decoration: line-through;
+  }
+.Current{
+    background-color:lightgreen;
+}
+.Current.checked{
+    background-color:white;
+    color: lightgreen;
+    border: 1px solid lightgreen;
+    text-decoration: line-through;
+
+}
+.Finished{
+    background-color:lightpink;
+}
+.Finished.checked{
+    background-color:white;
+    color: lightpink;
+    border: 1px solid lightpink;
+    text-decoration: line-through;
+
+}
+.Closed{
+    background-color:lightcoral;
+}
+.Closed.checked{
+    background-color:white;
+    color: lightcoral;
+    border: 1px solid lightcoral;
+    text-decoration: line-through;
+
+}
+.Message{
+    background-color:white;
+    color: teal !important;
+    border: 1px solid teal !important;
+}
+.Message.checked{
+    background-color:teal;
+    color: white;
+    border: 1px solid white;
+    color: white !important;
+    text-decoration: line-through;
+}
+.message-history-content{
+    max-height:400px;
+    overflow-y: scroll;
+}
+.message-history-content .message-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 5px;  
+    border-radius: 10px;
+    color: white;
+    gap: 10px;
+}
+.message-header img{
+width: 20px;
+}
+.message-history-content .message-header .title{
+    width: 30%;
+}
+
+.message-history-content .message-header .info{
+    flex: 6;
+}
+.message-history-content .message-header .month{
+    width:15%;
+}
+.message-body{
+    margin-top: 10px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid teal;
+    overflow: hidden;
+}
+
+.message-body div.info1{
+    font-size: 14px;
+    height: 23px;
+    overflow: hidden;
+    padding: 2px 25px;
+    position: relative;
+    line-height:24px;
+    box-sizing: border-box;
+}
+.message-body div.info1 .icon{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+.message-body div.info1.read-more{
+    height: max-content;
+}
+.message-body p.info2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 25px;
+    padding: 2px 5px;
+    border: 0.5px solid teal;
+    font-size: 14px;
+}
+.message-body p.info2 span{
+    flex:5;
+}
+.message-body p.info2 span.img{
+    flex:1;
+}
+.message-body p.info2 img{
+    width: 20px;
+}
+.message-body .rotate{
+    transform: rotate(180deg);
+}
+

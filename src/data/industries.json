@@ -1,0 +1,20 @@
+{
+    "industries":[
+        "Oil & gas onshore production",
+        "Oil & gas offshore production",
+        "LNG",
+        "Subsea",
+        "Terminal",
+        "Refinery",
+        "Onshore wind",
+        "Offshore wind",
+        "Geotherminal",
+        "Waste to energy",
+        "Water treatment",
+        "Power plant",
+        "Chemical",
+        "Mining",
+        "Hydrogen",
+        "Drilling"
+    ]
+}

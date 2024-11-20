@@ -21,15 +21,20 @@
 }
 .tabCv-right {
   display: flex;
+  align-items: center;
   border: 1px solid teal;
   border-radius: 15px 15px 0 0;
   overflow: hidden;
   padding: 0 10px;
   height: 47px;
 }
-:focus {
-  outline: none;
+.tabCv-right input{
+  border: none;
 }
-input:focus {
+.tabCv-right input:focus {
   outline: none;
+  border: none;
+}
+.rpv-toolbar__right,.rpv-search__popover-label {
+  display: none !important;
 }

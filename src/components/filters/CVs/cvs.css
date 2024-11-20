@@ -1,0 +1,72 @@
+.cv-container .title{
+    color: white;
+    text-align: center;
+    margin: 10px 0px;
+}
+.cv-upload{
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: teal;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.cv-upload span{
+    margin-right: 10px;
+}
+.attach-icon{
+    height: 25px;
+}
+.drag-drop-cv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: teal; 
+    height: 250px;
+    border-radius: 10px;
+    margin:5px 0;
+    color: white;
+}
+
+
+.closeBtn{
+    cursor: pointer;
+}
+.drag-over{
+    border: 3px dashed white;
+    opacity: 0.6;
+}
+
+.cv-source{
+    display: flex;
+    gap: 2px;
+    margin-bottom: 5px;
+}
+.cv-source-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    border-radius: 10px;
+    width: 20%;
+}
+.cv-source-column span{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+.cv-source-column span:hover{
+    background: lightgreen;
+}
+.source{
+    text-align: center;
+    align-items: center;
+    background: lightblue;
+}
+span.selected{
+    background: green;
+}

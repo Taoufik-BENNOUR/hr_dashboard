@@ -4,7 +4,7 @@ import "./popUp.css"
 import { Close, Done } from '@mui/icons-material'
 import TableLayout from '../table/Table'
 
-const PopUp = ({open,anchorEl,placement,setOpen,title}) => {
+const PopUp = ({open,anchorEl,placement,setOpen,title,content}) => {
 
   const handleClose = () =>{
     setOpen(false)
@@ -29,7 +29,7 @@ const PopUp = ({open,anchorEl,placement,setOpen,title}) => {
     </div>
       <Box className="pop-up-content" sx={{ p: 1, bgcolor: 'background.paper',
      }}>
-        <TableLayout title={title}/>
+        {content}
       </Box>
     </Popper>
   </Box>

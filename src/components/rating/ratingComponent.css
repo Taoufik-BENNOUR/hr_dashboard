@@ -1,0 +1,22 @@
+.rating-container{
+    display: flex;
+    gap: 5px;
+}
+.rating-container img{
+    width: 20px;
+}
+.rating{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.rating-value{
+    position: absolute;
+    font-size: 10px;
+    color: black;
+}
+.rating-selected{
+    background-color: blue;
+}

@@ -1,0 +1,47 @@
+.clients-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+.clients-container h4{
+    text-align:center;
+    color: white;
+}
+.clients-item{
+    background: lightcyan;
+    padding:5px 10px;
+    border-radius: 10px;
+}
+.clients-item:hover{
+    background: lightgreen;
+}
+.clients-left,.clients-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2px;
+}
+
+.clients-item:has(input){
+    background: white;
+}
+.clients-search{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.selected-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 10px;
+    border-radius: 10px;
+    background: green;
+    color: white;
+}
+.selected-items .closeBtn{
+    height: 20px;
+    cursor: pointer;
+}

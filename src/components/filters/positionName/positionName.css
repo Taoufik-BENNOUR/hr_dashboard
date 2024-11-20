@@ -1,0 +1,35 @@
+.position-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    gap: 5px;
+}
+.position-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.position-input input{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    color: black;
+}
+.position-input.filled {
+    background-color: green;
+    color: white;
+}
+.position-input input.filled{
+    color: white;
+}
+.validateBtn{
+    border:1px solid green;
+    color: green;
+    background-color: white;
+}

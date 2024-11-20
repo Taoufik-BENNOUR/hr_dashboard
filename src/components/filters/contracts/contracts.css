@@ -1,0 +1,72 @@
+
+.contacts-container table{
+    width: 100%;
+    height: 100%;
+}
+.contacts-header th{
+    text-align: center;
+}
+.contacts-container tr{
+    /* display: flex; */
+    /* gap: 5px; */
+    padding: 2px;
+}
+
+.contacts-container td{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightblue;
+}
+.contacts-actual{
+    overflow: hidden;
+    padding:5px 10px;
+    border-radius: 10px;
+    background: white !important;
+    position: relative;
+}
+.contacts-actual-data{
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    background: lightgreen;
+    color: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+.contacts-input{
+    display: block;
+    margin: auto;
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 100%;
+    box-sizing: border-box;
+}
+.contacts-actual-data.filled{
+    display: flex;
+    font-size: 14px;
+}
+.contacts-actual-data span{
+    margin-left: 10px;
+}
+.contacts-actual-data .closeBtn{
+    position: absolute;
+    right: 0;
+}
+
+.contacts-input .PhoneInputInput{
+    border: none !important;
+    outline: none;
+}
+.modal-btn{
+    cursor: pointer;
+    background:#2196f3;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+}

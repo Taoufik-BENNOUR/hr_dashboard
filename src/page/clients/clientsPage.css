@@ -1,0 +1,10 @@
+.clients-page{
+        display: flex;
+        gap: 1rem;
+        margin-left: 100px;
+        margin-right: 10px;
+}
+.page-block{
+    margin-top: 10px;
+    flex: 1;
+}

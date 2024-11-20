@@ -1,10 +1,8 @@
-import { CalendarIcon } from '@chakra-ui/icons';
-import {Timeline, TrendingUp, Search, FlightTakeoff, Factory, LocationCityOutlined, LocationOn, Translate, DateRange, CalendarMonth, Paid, PaidOutlined, SchoolOutlined, DescriptionOutlined, DeveloperBoard, CrisisAlert, ListAlt, Flag, DataUsage, LanOutlined } from '@mui/icons-material';
-import { Ages_Empty, Ages_Filled, Availabilities_Empty, Availabilities_Filled, Clients_Empty, Clients_Filled, Contracts_Empty, Contracts_Filled, Drilling_Empty, Drilling_Filled, Educations_Empty, Educations_Filled, Industries_Empty, Industries_Filled, Keyword_empty, Keyword_filled, Languages_Empty, Languages_Filled, Mobilities_Empty, Mobilities_Filled, Nationalities_Empty, Nationalities_Filled, Phases_Empty, Phases_Filled, Positions_Empty, Positions_Filled, Residencies_Empty, Residencies_Filled, Salaries_Empty, Salaries_Filled, Softwares_Empty, Softwares_Filled } from './icons';
+import { Ages_Empty, Ages_Filled, Availabilities_Empty, Availabilities_Filled, CVs_Candidate_parameters_Empty, CVs_Candidate_parameters_Filled, Clients_Empty, Clients_Filled, Contracts_Empty, Contracts_Filled, Drilling_Empty, Drilling_Filled, Educations_Empty, Educations_Filled, Experience_Candidate_parameters_Empty, Experience_Candidate_parameters_Filled, Industries_Empty, Industries_Filled, Keyword_empty, Keyword_filled, Languages_Empty, Languages_Filled, Mobilities_Empty, Mobilities_Filled, Nationalities_Empty, Nationalities_Filled, Phases_Empty, Phases_Filled, Positions_Empty, Positions_Filled, Residencies_Empty, Residencies_Filled, Salaries_Empty, Salaries_Filled, Softwares_Empty, Softwares_Filled, tick_box_empty } from './icons';
 const sidebarData = [
 
     {
-        title:"Keyboard",
+        title:"Keywords",
         icon:Keyword_filled,
         iconEmpty:Keyword_empty,
         path:"/",
@@ -115,6 +113,27 @@ const sidebarData = [
       path:"/",
       size:25
     },
+    {
+      title:"Experience",
+      icon:Experience_Candidate_parameters_Filled,
+      iconEmpty:Experience_Candidate_parameters_Empty,
+      path:"/",
+      size:30
+    },
+    {
+      title:"CVs",
+      icon:CVs_Candidate_parameters_Filled,
+      iconEmpty:CVs_Candidate_parameters_Empty,
+      path:"/",
+      size:30
+    },
+    {
+      title:"Opportunities",
+      icon:tick_box_empty,
+      iconEmpty:tick_box_empty,
+      path:"/",
+      size:20
+    }
 ];
 
 export default sidebarData;

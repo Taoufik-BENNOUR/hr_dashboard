@@ -7,11 +7,26 @@ import TabCV from "../TabCV/TabCV";
 import CandidatePersonalinformations from "../candidate-info/CandidatePersonalinformations";
 import styles from "./styles.module.css";
 import candidates from "../../data/candidates";
+import ReactPaginate from "react-paginate";
+import PreviewPdf from "../PreviewPdf/PreviewPdf";
+import { resume } from "../../data/icons";
+import { Viewer } from "@react-pdf-viewer/core";
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import ReactPdfViewer from "../reactPdfViewer/ReactPdfViewer";
+import { searchPlugin } from "@react-pdf-viewer/search";
+import { zoomPlugin } from '@react-pdf-viewer/zoom';
 
 const GlobalCandidateArea = props => {
+
+  const searchPluginInstance = searchPlugin();
+  const zoomPluginInstance = zoomPlugin();
+  const { Search } = searchPluginInstance;
+  const { ZoomInButton, ZoomOutButton, ZoomPopover } = zoomPluginInstance;
+
   const ref = useRef(null);
   const [isItemFocused, setIsItemFocused] = useState(0);
   const [countCvs, setCountCvs] = useState(0);
+
 
   const collapsePanel = () => {
     const panel = ref.current;
@@ -38,6 +53,14 @@ const GlobalCandidateArea = props => {
     }
   };
 
+  const itemsPerPage = 5; 
+  const [currentPage, setCurrentPage] = useState(0); 
+  const indexOfFirstItem = currentPage * itemsPerPage;
+  const indexOfLastItem = indexOfFirstItem + itemsPerPage;
+  const currentCandidates = candidates.slice(indexOfFirstItem, indexOfLastItem);
+  const handlePageClick = ({ selected }) => {
+    setCurrentPage(selected);
+  };
   return (
     <>
       <div className={styles.Container}>
@@ -45,31 +68,43 @@ const GlobalCandidateArea = props => {
         <div className={styles.BottomRow}>
           <PanelGroup autoSaveId="example" direction="horizontal">
             <Panel className={styles.Panel} collapsible={true} order={1} defaultSize={50} ref={ref}>
-              <CandidatePersonalinformations selectedItemInfos={isItemFocused} />
+              <CandidatePersonalinformations pageName={"candidates"} data={candidates} selectedItemInfos={isItemFocused} />
               <div className="listCandidates">
-                {candidates.map((item, index) => (
+                {currentCandidates.map((item, index) => (
                   <CandidateInfoCard
                     data={item}
-                    index={index}
-                    focused={isItemFocused == index ? true : false}
-                    selectedItem={() => selectedItemIndex(index)}
+                    index={index+indexOfFirstItem}
+                    focused={isItemFocused == index+indexOfFirstItem ? true : false}
+                    selectedItem={() => selectedItemIndex(index+indexOfFirstItem)}
                     countSelection={count => countSelectionDirect(count)}
                   />
                 ))}
               </div>
+              <ReactPaginate
+        previousLabel={"Previous"}
+        nextLabel={"Next"}
+        breakLabel={"..."}
+        pageCount={Math.ceil(candidates.length / itemsPerPage)}
+        marginPagesDisplayed={2}
+        pageRangeDisplayed={3}
+        onPageChange={handlePageClick}
+        containerClassName={"pagination"}
+        subContainerClassName={"pages pagination"}
+        activeClassName={"active current"}
+      />
             </Panel>
+            
             <ResizeHandle resizeAction={collapsePanel} />
             <Panel className={styles.Panel} collapsible={false} order={2} minSize={50}>
-              <TabCV />
+              <TabCV Search={Search} buttons={{ZoomInButton,ZoomOutButton,ZoomPopover}} />
               <div className="listCandidates">
-                {candidates[isItemFocused].resume1.map((item, index) => (
+                {/* {candidates[isItemFocused].resume1.map((item, index) => (
                   <>
                     <img src={item} style={{ width: "100%" }} />
                     <br />
                   </>
-                ))}
-
-                {/* <embed src="https://www.africau.edu/images/default/sample.pdf" style={{ width: "100%", height: "92vh" }} /> */}
+                ))} */}
+                    <ReactPdfViewer resume={resume} searchPluginInstance={searchPluginInstance} zoomPluginInstance={zoomPluginInstance} />
               </div>
             </Panel>
           </PanelGroup>

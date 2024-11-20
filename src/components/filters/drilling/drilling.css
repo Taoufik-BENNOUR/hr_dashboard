@@ -1,0 +1,50 @@
+
+.drilling-menu{
+    margin-bottom: 10px;
+}
+.drilling-items{
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:2px
+}
+.drilling-menu .rotate{
+    transform: rotate(180deg);
+}
+.drilling-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid rgb(1, 44, 51);;
+    border-radius: 10px;
+}
+.drilling-item{
+    background: lightcyan;
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    padding:5px;
+    border-radius: 10px;
+}
+.drilling-item:hover{
+    background: lightgreen;
+}
+
+.drilling-items.open{
+    display: flex;
+
+}
+.drilling-header.open{
+    background:rgb(1, 44, 51);
+}
+
+.drilling-item.selected{
+    background:green;
+    color: white;
+}
